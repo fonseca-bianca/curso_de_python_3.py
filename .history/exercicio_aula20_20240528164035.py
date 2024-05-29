@@ -1,0 +1,1 @@
+primeiro_valor = input("Digite o primeiro valor: ")
