@@ -1,0 +1,13 @@
+# if 0 and 1:
+#     print(True and 1) 
+# NÃO retorna nada pq o ZERO do if é avaliado como Falsy, logo, o que está dentro
+# do corpo do if NÃO será executado
+
+# if 1 and 1:
+#     print(True and 1 and False)
+# vai imprimir False, pois o AND necessita q TODAS as condições sejam True pra que
+# a sentença seja considerada True
+
+# variavel_a = 1 or 0 --> True 
+# variavel_b = 0 or 1 --> True, pois no OR basta q um seja True pra q toda expressão seja True
+# print(variavel_a, variavel_a)

@@ -1,0 +1,4 @@
+# if 0 and 1:
+#     print(True and 1) 
+# NÃO retorna nada pq o ZERO do if é avaliado como Falsy, logo, o que está dentro
+# do corpo do if NÃO será executado
