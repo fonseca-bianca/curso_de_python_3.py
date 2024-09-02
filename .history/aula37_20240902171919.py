@@ -7,10 +7,11 @@ while contador <= 100:
         # msg_personalizada = "Não vou mostrar o número {}"
         # msg_formatada = msg_personalizada.format(contador) #vai mostrar a msg conforme cada número 6 e 8, mesmo tendo criado um único print 
         # print(msg_formatada)
-        print("Não vou mostrar o número", contador)
+        #OU
+        print("Não vou mostrar o número", contador) #vai mostrar a msg conforme cada número 6 e 8, mesmo tendo criado um único print 
         continue
     
-    print(contador)
+    print(contador) # print ANTES do 'break': aí irá aparecer o 12
     
     if contador == 12:
         break

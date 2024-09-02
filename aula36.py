@@ -15,5 +15,5 @@ print("Acabou a contagem.")
 
 contador = 10
 
-contador *= "2" #vai multiplicar a "string" pelo valor antigo do contador, q é 10
+contador *= "2" #vai multiplicar a "string" com o valor "2" pelo valor antigo do contador, q é 10, ou seja, o resultado será 2222222222
 print(contador)

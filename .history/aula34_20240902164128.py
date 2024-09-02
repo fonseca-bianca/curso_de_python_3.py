@@ -12,7 +12,6 @@ while condicao:
     print(f"O seu nome é {nome}")
     
     resposta = input("Digite 'sair' pra fechar o programa: ")
-
     if resposta == "sair":
         break #esse 'break' busca o 'while' mais próximo dele
 

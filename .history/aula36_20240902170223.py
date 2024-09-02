@@ -1,7 +1,6 @@
 """ 
 Operadores de Atribuição COM Operadores Aritméticos:
-= , += , -= , *= , /= , //= (divisão inteira e tbm uso da variável com o resultado da divisão)
-, **= (potência) , %= (módulo)
+= , += , -= , *= , /= (divisão retorna nº ponto flutuante), //= (divisão inteira), **= (potência) , %= (módulo)
 """
 
 contador = 0
@@ -16,5 +15,5 @@ print("Acabou a contagem.")
 
 contador = 10
 
-contador *= "2" #vai multiplicar a "string" pelo valor antigo do contador, q é 10
+contador *= "2" #vai multiplicar a "string" com o valor "2" pelo valor antigo do contador, q é 10, ou seja, o resultado será 2222222222
 print(contador)

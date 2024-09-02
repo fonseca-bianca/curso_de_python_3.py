@@ -1,12 +1,11 @@
 qnt_linhas = 5
 qnt_colunas = 5
 
-#linha = 1
-linha = 0
+linha = 1 # é o contador das linhas
+#linha = 0
 while linha <= qnt_linhas:
-    linha = 1
-    break
-    coluna = 1
+    #linha += 1
+    coluna = 1 # é o contador das colunas
     while coluna <= qnt_colunas:
         print(f"{linha=} {coluna=}") #OU (linha, coluna) OU (f"linha, coluna"): apareceria no console assim: linha, coluna 25x
         coluna += 1

@@ -11,7 +11,7 @@ while contador <= 100:
         print("Não vou mostrar o número", contador) #vai mostrar a msg conforme cada número 6 e 8, mesmo tendo criado um único print 
         continue
     
-    print(contador)
+    print(contador) # print ANTES do 'break': aí irá aparecer o 12
     
     if contador == 12:
         break
