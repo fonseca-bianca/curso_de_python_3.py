@@ -1,4 +1,4 @@
-## Calculadora com 4 operadores matemáticos ##
+"""Calculadora com 4 operadores matemáticos"""
 while True:
     numero_1 = input("Digite um número: ")
     numero_2 = input("Digite outro número: ")
