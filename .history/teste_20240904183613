@@ -1,0 +1,11 @@
+budget = 20
+print(budget + 10)
+
+price = 14
+discount = 0.2 * price
+final_price = price - discount
+print(final_price)
+
+items = 18
+boxes = 6
+print(items/boxes)

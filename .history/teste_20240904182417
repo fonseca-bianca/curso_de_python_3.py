@@ -1,0 +1,6 @@
+budget = 20
+print(budget + 10)
+
+price = 14
+discount = 0.2 * price
+print(price)
