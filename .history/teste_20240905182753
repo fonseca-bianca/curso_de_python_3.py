@@ -27,3 +27,7 @@ while linha <= linhas:
         coluna += 1
     linha += 1
     
+
+a = "basket"
+b = "ball"
+print(a+b)
