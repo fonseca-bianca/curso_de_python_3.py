@@ -14,16 +14,12 @@ nome = iter("Luiz") # nome = "Luiz".__iter__()
 print(next(nome)) # nome.__next__()
 """
 
-nome = "Luiz" # iterável: percorrer os elementos, no caso, caracteres da string 'Luiz'
-# iterador = iter(nome) # iterator: criado a partir do iterável. É um obj q sabe COMO percorrer elementos do iterável
+nome = "Luiz" # iterável: percorrer os elementos, no caso, letras da string 'Luiz'
+iterador = iter(nome) # iterator
 
-# while True:
-#     try:
-#         letra = next(iterador) #next: obter próximo elemento do iterador. Elemento obtido é armazenado na variável 'letra'
-#         print(letra)
-#     except StopIteration: #quando iterador esgota todos elementos do iterável, a função next lança a exceção
-#         break #interrompe o loop
-
-# mesmo q o de cima com 'while' só q mais simplificado
-for letra in nome:
-    print(letra)
+while True:
+    try:
+        letra = next(iterador)
+        print(letra)
+    except StopIteration:
+        break

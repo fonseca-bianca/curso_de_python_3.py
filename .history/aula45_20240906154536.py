@@ -24,6 +24,5 @@ nome = "Luiz" # iterável: percorrer os elementos, no caso, caracteres da string
 #     except StopIteration: #quando iterador esgota todos elementos do iterável, a função next lança a exceção
 #         break #interrompe o loop
 
-# mesmo q o de cima com 'while' só q mais simplificado
 for letra in nome:
     print(letra)
