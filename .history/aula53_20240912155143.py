@@ -19,7 +19,7 @@ print(lista_enumerada)
 
 # para cada tupla, ele vai separar o indice e o desenho. O 'for' abaixo é o mais simples
 for indice, desenho in lista_enumerada:
-    print(indice, desenho, lista1[0]) 
+    print(indice, desenho) 
     # print(lista_enumerada) # mostra o objeto da lista na memória do programa <enumerate object at 0x000002BA86392980>
 
 """o for acima é o mesmo que:

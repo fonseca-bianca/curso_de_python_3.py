@@ -17,22 +17,13 @@ print(lista_enumerada)
 # print(next(lista_enumerada), type(lista_enumerada)) # retorna: <enumerate object at 0x000002081D8B2A70>: núm do objeto lista na memória do programa
 
 
-# para cada tupla, ele vai separar o indice e o desenho. O 'for' abaixo é o mais simples
+# para cada tupla, ele vai separar o indice e o desenho
 for indice, desenho in lista_enumerada:
-    print(indice, desenho, lista1[0]) 
+    print(indice, desenho) 
     # print(lista_enumerada) # mostra o objeto da lista na memória do programa <enumerate object at 0x000002BA86392980>
 
 """o for acima é o mesmo que:
-for item in enumerate(lista1):
+for item in enumerate(lista1)
     indice, desenho = item
     print(indice, desenho)
 """    
-
-"""q tbm é o mesmo que
-for tupla_enumerada in enumerate(lista1):
-    print('For da tupla:')
-    for valor in tupla_enumerada:
-        print(f'\t{valor}')
-        
-        # \t: em Python, é uma tabulação. Cria espaço horizontal pra melhor visualização dos itens
-"""

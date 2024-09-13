@@ -47,4 +47,4 @@
 # print(whole_cucumbers_per_person)
 
 string_num = "7.5"
-print (float(string_num)) 
+print (float(string_num))
