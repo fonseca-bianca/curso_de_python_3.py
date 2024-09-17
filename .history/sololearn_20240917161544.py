@@ -66,15 +66,10 @@ for something in range(3):
 #         print(f"Assentos disponíveis: {seats}")
 #         seats -= 1
 #     else:
-#         print("Os bilhetes terminaram e não há mais assentos disponíveis.")
+#         print("Sem assentos disponíveis.")
 #         break
 
 # seats = 500
 # while seats > 0:
 #     print(f"Assentos disponíveis: {seats}")
 #     seats -= 1
-
-counter = 0
-while counter < 4:
-    print(counter)
-    counter += 1

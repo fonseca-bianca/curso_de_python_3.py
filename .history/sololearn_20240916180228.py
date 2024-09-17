@@ -49,8 +49,6 @@
 # string_num = "7.5"
 # print (float(string_num)) 
 
-
-"""ambos vão imprimir a mesma coisa = 0 1 2 | 0 1 2
 for i in range(3):
     print(i)
     
@@ -58,23 +56,3 @@ print("--")
 
 for something in range(3):
     print(something)
-"""
-
-# seats = 500
-# while True:
-#     if seats > 0:
-#         print(f"Assentos disponíveis: {seats}")
-#         seats -= 1
-#     else:
-#         print("Os bilhetes terminaram e não há mais assentos disponíveis.")
-#         break
-
-# seats = 500
-# while seats > 0:
-#     print(f"Assentos disponíveis: {seats}")
-#     seats -= 1
-
-counter = 0
-while counter < 4:
-    print(counter)
-    counter += 1

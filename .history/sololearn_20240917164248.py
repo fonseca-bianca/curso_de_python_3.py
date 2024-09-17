@@ -77,4 +77,3 @@ for something in range(3):
 counter = 0
 while counter < 4:
     print(counter)
-    counter += 1
