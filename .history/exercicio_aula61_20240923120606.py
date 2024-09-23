@@ -1,7 +1,5 @@
 """
-EXERCÍCIO: ALGORITMO DO CPF
-
-Calculo dos dígitos do CPF (após traço) (70, só o 7, no caso):
+Calculo do primeiro dígito do CPF (70, só o 7, no caso):
 CPF: 746.824.890-70
 Colete a soma dos 9 primeiros dígitos do CPF,
 MAIS O PRIMEIRO DIGITO,multiplicando cada um dos valores por uma contagem 
@@ -12,7 +10,7 @@ com os números respectivos (ex.: 746 = 10 9 8)
 3º: multiplicando cada dígito do CPF pelo número da contagem regressiva respectivamente 
 
 ________________________________________________________________________________________
-**Cálculo do primeiro dígito do CPF (após traço)**
+**Cálculo do primeiro dígito do CPF**
 CPF: 746.824.890-70
 Colete a soma dos 9 primeiros dígitos do CPF
 multiplicando cada um dos valores por umacontagem regressiva começando de 11
@@ -33,45 +31,10 @@ Se o resultado anterior for maior que 9:
 contrário disso:
     resultado é o valor da conta
 
-Retorno:
 O primeiro dígito do CPF é 7
 """
 
-import re
-import sys
-
-cpf = "746.824.890-70"\
-    .replace(".", "")\
-    .replace("-", "")\
-    .replace("/", "")\
-    .replace("_", "")\
-    .replace(" ", "")
-    # .replace("o que se quer substituir", "pelo o que se quer substituir")
-    # no caso acima, não queremos substituir por nada específico, por isso uma string vazia
-    
-# essa é a forma mais longa e menos usual    
-# cpf = "746.824.890-70"\
-#     .replace(".", "")\
-#     .replace("-", "")\
-#     .replace("/", "")\
-#     .replace("_", "")\
-#     .replace(" ", "")
-    
-# essa é a forma mais completa, apenas exige a importação da biblioteca re (regular expressions)   
-# pode colocar letras e qlqr coisa dentro ("746.824.890aaaaaaaabbbb-70"), pq ele restringe o que ele NÃO quer
-cpf = re.sub(
-    r'[^0-9]', # tudo o que NÃO for número digitado pelo usuário qndo inserir o CPF
-    "", # irá substituir por nada (o número vai ficar um só)
-    "746.824.890-70"
-)
-print(cpf)
-
-cpf_eh_sequencial = cpf == cpf[0] * len(cpf) # isso é uma flag
-
-if cpf_eh_sequencial:
-    print("Você enviou dados sequenciais.")
-    sys.exit() # tem q importar biblioteca 'sys'. No caso, se estiver correto o q o usuário enviar, aq o cód já acaba
-    
+cpf = input("Insira o número do seu CPF (não isenrir símbolos): ")
 soma_nove_digitos = cpf[:9] #fatiamento do índice zero ao 9, sendo q o 9 NÃO é incluído
 contagem_regressiva_1 = 10
 
@@ -83,6 +46,7 @@ for digito_1 in soma_nove_digitos:
     contagem_regressiva_1 -= 1 # mostra a contagem regressiva
 
 print(f"A soma de todos os números multiplicados é: {resultado_digito_1}")
+
 
 obter_digito_1 = ((resultado_digito_1 * 10) % 11)
 obter_digito_1 = obter_digito_1 if obter_digito_1 <= 9 else 0 # ternário
@@ -108,11 +72,10 @@ Se o resultado anterior for maior que 9:
 contrário disso:
     resultado é o valor da conta
 
-Retorno: 
 O segundo dígito do CPF é 0
 """
 print("----------------------------------------------------------------")
-cpf = "74682489070"
+# cpf = 
 soma_dez_digitos = cpf[:10] # fatiamento do índice zero ao 10, sendo q o 10 NÃO é incluído
 contagem_regressiva_2 = 11 # os 10 primeiros dígitos são multiplicados pela seq regressiva começando em 11 
 
@@ -127,6 +90,7 @@ for digito_2 in soma_dez_digitos:
 
 print(f"A soma de todos os números multiplicados é: {resultado_digito_2}")
 
+
 # 'obter_digito_2': calcula o último dígito do CPF (o 2º verificador)
 obter_digito_2 = ((resultado_digito_2 * 11) % 11) 
 # 1º: multiplica valor soma total de 'resultado_digito_2' por 11. 
@@ -137,8 +101,8 @@ obter_digito_2 = obter_digito_2 if obter_digito_2 <= 9 else 0 # ternário
 print(obter_digito_2)
 
 print("----------------------------------------------------------------")
-
 # Validação do CPF
+
 cpf_completo = f"{soma_nove_digitos}{obter_digito_1}{obter_digito_2}" # 9 dígitos + dígito 1 + dígito 2 (após o traço) total = 11 dígitos + dígitos CPF
 print(f"O CPF completo é: {cpf_completo}")
 

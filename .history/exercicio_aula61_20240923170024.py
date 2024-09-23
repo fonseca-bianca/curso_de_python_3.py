@@ -38,7 +38,6 @@ O primeiro dígito do CPF é 7
 """
 
 import re
-import sys
 
 cpf = "746.824.890-70"\
     .replace(".", "")\
@@ -58,19 +57,13 @@ cpf = "746.824.890-70"\
 #     .replace(" ", "")
     
 # essa é a forma mais completa, apenas exige a importação da biblioteca re (regular expressions)   
-# pode colocar letras e qlqr coisa dentro ("746.824.890aaaaaaaabbbb-70"), pq ele restringe o que ele NÃO quer
+# pode colocar letras e qlqr coisa dentro, pq ele restringe o que ele NÃO quer
 cpf = re.sub(
     r'[^0-9]', # tudo o que NÃO for número digitado pelo usuário qndo inserir o CPF
     "", # irá substituir por nada (o número vai ficar um só)
-    "746.824.890-70"
+    "746.824.890aaaaaaaabbbb-70"
 )
 print(cpf)
-
-cpf_eh_sequencial = cpf == cpf[0] * len(cpf) # isso é uma flag
-
-if cpf_eh_sequencial:
-    print("Você enviou dados sequenciais.")
-    sys.exit() # tem q importar biblioteca 'sys'. No caso, se estiver correto o q o usuário enviar, aq o cód já acaba
     
 soma_nove_digitos = cpf[:9] #fatiamento do índice zero ao 9, sendo q o 9 NÃO é incluído
 contagem_regressiva_1 = 10

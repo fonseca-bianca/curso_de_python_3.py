@@ -38,7 +38,6 @@ O primeiro dígito do CPF é 7
 """
 
 import re
-import sys
 
 cpf = "746.824.890-70"\
     .replace(".", "")\
@@ -67,10 +66,6 @@ cpf = re.sub(
 print(cpf)
 
 cpf_eh_sequencial = cpf == cpf[0] * len(cpf) # isso é uma flag
-
-if cpf_eh_sequencial:
-    print("Você enviou dados sequenciais.")
-    sys.exit() # tem q importar biblioteca 'sys'. No caso, se estiver correto o q o usuário enviar, aq o cód já acaba
     
 soma_nove_digitos = cpf[:9] #fatiamento do índice zero ao 9, sendo q o 9 NÃO é incluído
 contagem_regressiva_1 = 10
