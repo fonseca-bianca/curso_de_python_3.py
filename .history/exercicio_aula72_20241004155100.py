@@ -17,7 +17,7 @@ print(f"O resultado da multiplicação é: {result}") # total 5040
 def even_or_odd(result):
     if result % 2 == 0:
         return f"O resultado {result} é par"
-    # else: (se tivesse o else, o 'return' teria q estar dentro do else)
+    # else:
     return f"O resultado {result} é ímpar."
 
 # retorno da função 'par_ou_impar' armazenado na variável 'retorno_par_ou_impar'
