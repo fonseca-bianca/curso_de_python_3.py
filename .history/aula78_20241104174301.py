@@ -18,7 +18,6 @@ OU
 conjunto_2 = {1,2,3} -->  SÓ tem valor. Formato é útil para conjuntos pequenos 
 ou com valores fixos
 OBS.1: criar {} chave vazia é Dicionário e NÃO set
-       cria set vazio => set(): cria uma função set 
 OBS.2: se um conjunto de valores aparece entre chaves e NÃO há pares chave: valor, 
 o Python interpreta isso como um set.
 
@@ -45,20 +44,8 @@ EX.:
             print(numero)
 
 Métodos úteis:
-EX.: s1 = set()
-- add; --> só aceita 1 argumento por vez
-    s1.add("Luiz")
+- add;
 - update;
-    s1.update(("Olá mundo", 1, 2, 3)) --> Output: {3, 1, 'olá mundo', 2}
 - clear;
-    s1.clear()
-- discard; --> eliminar o próprio valor, já q NÃO há index no set
-    s1.discard("olá mundo")
-
-
-Operadores úteis:
-- união | união (union) => une
-- intersecção: & (intersection) => itens presentes em ambos
-- diferença (-): => itens presentes APENAS no set da esquerda
-- diferença simétrica: ^ => intens q NÃO estão em ambos
+- discard;
 """

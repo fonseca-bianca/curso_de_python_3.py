@@ -45,13 +45,9 @@ EX.:
             print(numero)
 
 Métodos úteis:
-EX.: s1 = set()
-- add; --> só aceita 1 argumento por vez
-    s1.add("Luiz")
+- add;
 - update;
-    s1.update(("Olá mundo", 1, 2, 3)) --> Output: {3, 1, 'olá mundo', 2}
 - clear;
-    s1.clear()
 - discard; --> eliminar o próprio valor, já q NÃO há index no set
     s1.discard("olá mundo")
 
