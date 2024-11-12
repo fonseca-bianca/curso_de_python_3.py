@@ -82,10 +82,8 @@ print()
 set_7 = {"A", "B", "F"}
 set_8 = {"C", "D", "E"}
 set_9 = set_7 - set_8
-set_10 = set_8 - set_7
 print(set_9) # output {'A', 'B', 'F'}: irá mostrar os itens q NÃO se repetem em AMBOS os SETS 
 # e tbm irá mostrar os itens que estiverem no SET da ESQUEDA da redução
-print(set_10) # output {'C', 'E', 'D'}
 
 print()
 # Diferença simétrica ^ :

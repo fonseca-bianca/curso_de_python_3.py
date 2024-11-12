@@ -79,17 +79,15 @@ print(set_6) # output {'B', 'C'}: irá mostrar os itens q se repetem em AMBOS os
 
 print()
 # diferença - :
-set_7 = {"A", "B", "F"}
-set_8 = {"C", "D", "E"}
+set_7 = {"A", "B", "C"}
+set_8 = {"C", "B", "D"}
 set_9 = set_7 - set_8
-set_10 = set_8 - set_7
-print(set_9) # output {'A', 'B', 'F'}: irá mostrar os itens q NÃO se repetem em AMBOS os SETS 
-# e tbm irá mostrar os itens que estiverem no SET da ESQUEDA da redução
-print(set_10) # output {'C', 'E', 'D'}
+print(set_9) # output {'A'}: irá mostrar os itens q não se repetem em AMBOS os SETS
 
 print()
 # Diferença simétrica ^ :
 set_A = {1, 2, 3, 4}
 set_B = {3, 4, 5, 6}
+
 set_difference_symmetric = set_A ^ set_B
 print(set_difference_symmetric) # output: {1, 2, 5, 6}

@@ -57,39 +57,15 @@ EX.: s1 = set()
 
 
 Operadores úteis:
-- união | união (union) => une (|: pipeline)
-- interseção: & (intersection) => itens presentes em ambos
+- união | união (union) => une
+- intersecção: & (intersection) => itens presentes em ambos
 - diferença (-): => itens presentes APENAS no set da esquerda
 - diferença simétrica: ^ => itens q NÃO estão em ambos os SETS.
     OBS.: Diferença simétrica retorna um NOVO SET (conjunto) contendo apenas
     os itens EXCLUSIVOS de cada SET, NÃO retorna valores repetidos em ambos os SETS
 """
-# union | :
-set_1 = {"A", "B", "C"}
-set_2 = {"C", "B", "D"}
-set_3 = set_1 | set_2
-print(set_3) # output {'A', 'C', 'B', 'D'}: une, MAS NÃO repete os itens duplicados
-
-print()
-# interseção & :
-set_4 = {"A", "B", "C"}
-set_5 = {"C", "B", "D"}
-set_6 = set_4 & set_5
-print(set_6) # output {'B', 'C'}: irá mostrar os itens q se repetem em AMBOS os SETS
-
-print()
-# diferença - :
-set_7 = {"A", "B", "F"}
-set_8 = {"C", "D", "E"}
-set_9 = set_7 - set_8
-set_10 = set_8 - set_7
-print(set_9) # output {'A', 'B', 'F'}: irá mostrar os itens q NÃO se repetem em AMBOS os SETS 
-# e tbm irá mostrar os itens que estiverem no SET da ESQUEDA da redução
-print(set_10) # output {'C', 'E', 'D'}
-
-print()
-# Diferença simétrica ^ :
 set_A = {1, 2, 3, 4}
 set_B = {3, 4, 5, 6}
+
 set_difference_symmetric = set_A ^ set_B
-print(set_difference_symmetric) # output: {1, 2, 5, 6}
+print(set_difference_symmetric)
