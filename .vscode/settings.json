@@ -12,5 +12,6 @@
     "python.defaultInterpreterPath": "python",
     "editor.accessibilityPageSize": 12,
     "workbench.colorTheme": "Dracula Soft",
+    "editor.rulers": [79], 
 
 }

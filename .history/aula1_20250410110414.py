@@ -1,12 +1,9 @@
 print(123)
-# comentario 1 linha
+#comentario 1 linha
 """
-DocString: NÃO É COMENTÁRIO, mas como o Python NÃO tem sistema de comentário 
-longo, o DocString é utilizado pelos Devs. O interpretador lê, mas não imprime 
-no terminal.
+DocString: NÃO É COMENTÁRIO, mas como o Python NÃO tem sistema de comentário longo,
+o DocString é utilizado pelos Devs. O interpretador lê, mas não imprime no terminal.
 Serve pra comentar, mas não é bem um comentador de cód.
-Conforme doc oficial Python PEP 8, deve ser restrito a 72 caracteres cada 
-linha  
 Serve pra:
 documentação de funções, classes e módulos
 É o conjunto de 3 aspas duplas ou simples pra comentários mais longos
@@ -14,7 +11,6 @@ escreva aqui
 escreva aqui tbm
 """
 '''
-
 assim tbm pode
 '''
 # comentário longo
@@ -22,4 +18,3 @@ assim tbm pode
     # ArithmeticErrorA
     # ArithmeticErrorA
     # ArithmeticErrorA
-
