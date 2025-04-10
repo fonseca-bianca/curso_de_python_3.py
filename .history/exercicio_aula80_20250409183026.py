@@ -46,12 +46,10 @@ def encontra_primeiro_duplicado(lista_inteiros):
             primeiro_duplicado = numero # número duplicado será armazenado na variável primeiro_duplicado e vai encerrar o loop com base na leitura do 'break' (neste caso, o loop é interrompido, pq NÃO queremos encontrar mais NENHUM duplicado)
             break
         
-        numeros_checados.add(numero) # adc número atual ao conjunto de números checados, pra q ele possa ser verificado em iterações futuras
+        numeros_checados.add(numero)
         
-    return primeiro_duplicado # retorna o primeiro número duplicado encontrado ou -1 se não houver duplicados
+    return primeiro_duplicado
 
-# saída do loop principal:
-# itera sobre uma lista de listas (lista_de_listas_de_inteiros) e chama a função encontra_primeiro_duplicado para cada lista de inteiros (cada linha, no caso)
 for lista in lista_de_listas_de_inteiros:
     print(
         lista,

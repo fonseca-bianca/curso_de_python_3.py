@@ -50,8 +50,6 @@ def encontra_primeiro_duplicado(lista_inteiros):
         
     return primeiro_duplicado # retorna o primeiro número duplicado encontrado ou -1 se não houver duplicados
 
-# saída do loop principal:
-# itera sobre uma lista de listas (lista_de_listas_de_inteiros) e chama a função encontra_primeiro_duplicado para cada lista de inteiros (cada linha, no caso)
 for lista in lista_de_listas_de_inteiros:
     print(
         lista,
