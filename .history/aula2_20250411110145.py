@@ -6,7 +6,7 @@ print(56, 78, sep='.', end='##')
 print()
 print()
 
-#CRLF: \r\n -> NÃO são exibidos na tela
+#CRLF: \r\n
 #LF (Unix e MAC): \n
 #\r: Caractere de retorno. Faz com que o cursor volte pro início da linha
 print("Olá, mundo", end="\r")
