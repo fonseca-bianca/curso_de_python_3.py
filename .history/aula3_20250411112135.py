@@ -19,10 +19,8 @@ print("Be'tina Foschegtz")
 #Escape:
 print(1, "Be\"tina Foschegtz") #\: a barra ao contrário é pra q o interpretador 
 #leia as aspas SEM quebrar
-# uso SEM contrabarra, mas com aspas dentro de aspas pra diferenciar o texto
-# Exemplo:
-print(2, ".a: ", "Betina 'Foschegtz'") 
-print(2, ".b: ",'Betina "Foschegtz"') 
+print(2, "-a: ", "Betina 'Foschegtz'") 
+print(2, "-b: ",'Betina "Foschegtz"') 
 
 
 
