@@ -16,4 +16,4 @@ conta_3 = (1 + (0.5 + 0.5)) ** (5 + 5)
 print(conta_3) # 1024.0
 
 conta_4 = (1 + int(0.5 + 0.5)) ** (5 + 5)
-print(conta_4) # 1024 (int(0.5 + 0.5) = 1
+print(conta_4) # 1024.0
