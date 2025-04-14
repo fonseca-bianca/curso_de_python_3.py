@@ -13,7 +13,7 @@ imc = peso / (altura * altura)
 # abaixo, toda a expressão está entre parêntes pro interpretador entender tudo
 # como uma string só, conforme PEP 8
 linha_1 = (
-        f'{nome_completo} tem {altura:.2f} metros de altura,'
+        f'{nome_completo} tem {altura:,2f} metros de altura,'
         f' pesa {peso} quilos e seu IMC é {imc:.2f}.'
 )
 print(linha_1)

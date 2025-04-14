@@ -1,8 +1,7 @@
-""" formatação de String:
-    * pra não precisar colocar um monte de vírgulas ou concatenações pra 
-escrever uma frase
-    * utiliza-se variáveis dentro da f-string envolvidas por chaves {}
-"""
+# formatação de String
+# pra não precisar colocar um monte de vírgulas ou concatenações pra escrever 
+# uma frase
+
 nome_completo = "Bianca Fonseca"
 peso = 52
 altura = 1.52
