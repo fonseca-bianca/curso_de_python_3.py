@@ -9,6 +9,3 @@ print(soma)
 
 concatena = "B" + "i"
 print(concatena)
-
-concatena_nome = "Luiz" + str(1) + " " + "Otávio"
-print(concatena_nome)
