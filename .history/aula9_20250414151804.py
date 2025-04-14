@@ -11,12 +11,4 @@ print('divisão inteira:', divisao_inteira)
 # se tratar de float)
 
 exponenciacao = 2 ** 10
-print('exponenciação/potenciação:', exponenciacao)
-
-modulo = 55 % 2 # resto da divisão
-print('módulo:', modulo)
-
-# o Módulo ajuda a identificar se um número é divisível por outro. Se o resto
-# der ZERO, então o número é divisível pelo outro, se der 1, então não é.
-print(10 % 8 == 0) # False
-print(10 % 5 == 0) # True
+print('exponenciação:', exponenciacao)

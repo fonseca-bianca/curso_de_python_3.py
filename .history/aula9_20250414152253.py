@@ -18,5 +18,4 @@ print('módulo:', modulo)
 
 # o Módulo ajuda a identificar se um número é divisível por outro. Se o resto
 # der ZERO, então o número é divisível pelo outro, se der 1, então não é.
-print(10 % 8 == 0) # False
-print(10 % 5 == 0) # True
+print(10 % 8)
