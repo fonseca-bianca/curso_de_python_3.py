@@ -22,31 +22,12 @@ int_numero_2 = int(numero_2)
 print(f"A soma dos números é: {int_numero_1 + int_numero_2}")
 
 
-# Convertendo a string em outro tipo de dado (conversão direta):
+# Convertendo a string em outro tipo de dado:
 digite_numero = int(input("Digite um número: "))
 print(f'O número digitado foi: {digite_numero}')
 
 # Podemos atribuir o valor da variável ao nome da variável: útil pra 
 # verificar o valor da variável
-"""
-OBS.: a conversão direta pode ocasionar erros futuros ou até mesmo 'quebrar'
-o código no 1º erro de digitação do usuário, por isso é interessante fazer a
-primeiro o recebimento do dado digitado pelo usuário (como uma string mesmo)
-e depois fazer a conversão da string pro outro tipo de dado desejado
-* (int, float, etc)
 
-Com base no exmeplo acima, ficaria:
-digite_numero = input("Digite um número: ") => recebido o dado como string
-conversao_dado = int(digite_numero) => conversão da string pra inteiro
-print(f'O número digitado foi: {conversao_dado}')
-
-"""
 nome = input("Digite seu nome: ")
-print(f'O seu nome é: {nome=}') 
-# é o mesmo q, porém, + "limpo" e eficiente: 
-# print(f'O seu nome é: nome= {nome}')
-
-
-digite_numero = input("Digite um número: ") 
-conversao_dado = int(digite_numero) 
-print(f'O número digitado foi: {conversao_dado}')
+print(f'O seu nome é: {nome=}')

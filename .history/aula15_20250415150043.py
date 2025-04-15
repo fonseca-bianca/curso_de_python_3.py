@@ -38,15 +38,10 @@ e depois fazer a conversão da string pro outro tipo de dado desejado
 Com base no exmeplo acima, ficaria:
 digite_numero = input("Digite um número: ") => recebido o dado como string
 conversao_dado = int(digite_numero) => conversão da string pra inteiro
-print(f'O número digitado foi: {conversao_dado}')
+print(f'O número digitado foi: {digite_numero}')
 
 """
 nome = input("Digite seu nome: ")
 print(f'O seu nome é: {nome=}') 
 # é o mesmo q, porém, + "limpo" e eficiente: 
 # print(f'O seu nome é: nome= {nome}')
-
-
-digite_numero = input("Digite um número: ") 
-conversao_dado = int(digite_numero) 
-print(f'O número digitado foi: {conversao_dado}')
