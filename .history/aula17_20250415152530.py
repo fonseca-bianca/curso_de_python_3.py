@@ -1,11 +1,10 @@
 #CONDICIONAIS
-#cód irá checar condição True, se NÃO for, ele vai ler outro 'if' no cód
-# até encontrar um cond True e sair do bloco
+#cód irá checar condição True, só assim ele vai ler outro 'if' no cód
 
 condicao1 = False
-condicao2 = False
-condicao3 = True
-condicao4 = False
+condicao2 = True
+condicao3 = False
+condicao4 = True
 
 if condicao1:
     print("Código pra condição 1")
