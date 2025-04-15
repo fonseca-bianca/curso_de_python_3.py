@@ -11,7 +11,7 @@ b = "BBB"
 c = 1.1
 
 # Argumento nomeado 'nome1' definido como 'a' e 'nome2' definido como 'b' 
-string = 'b={0} a={nome1} c={nome2:.2f}' 
+string = 'b={0} a={nome1} c={:.2f}' 
 #'b' está na posição ZERO, pois é o 
 # índice correspondente na ordem das strings
 
