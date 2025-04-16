@@ -2,8 +2,8 @@
 #cód irá checar condição True, se NÃO for, ele vai ler outro 'if' no cód
 # até encontrar um cond True e sair do bloco
 
-condicao1 = False
-condicao2 = False
+condicao1 = True
+condicao2 = True
 condicao3 = True
 condicao4 = True
 
