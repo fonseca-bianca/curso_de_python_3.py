@@ -1,5 +1,5 @@
-# primeiro_valor = input("Digite o primeiro valor: ")
-# segundo_valor = input("Digite o segundo valor: ")
+primeiro_valor = input("Digite o primeiro valor: ")
+segundo_valor = input("Digite o segundo valor: ")
 
 # # Convertendo os inputs para números, já q a função input SEMPRE lê tipo string
 # # primeiro_valor = float(primeiro_valor)
