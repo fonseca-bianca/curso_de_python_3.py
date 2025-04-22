@@ -12,10 +12,8 @@ else:
     
 # colocando entre parênteses a expressão q quer q seja lida primeiro, o 
 # programa vai ler ela pra depois verificar, se necessário, a outra expressão
-# justamente pra não dar erro de lógica
 
-# Avaliação Curto Circuito OR:
-#     - Se a primeira condição for verdadeira, o Python não avalia a segunda
-senha = input("Senha: ") or "Sem senha" # é como se fosse um 'if' só q usando 
+# Curto Circuito OR:
+senha = input("Senha: ") or "Sem senha" #é como se fosse um 'if' só q usando 
 # o 'or'
 print(senha)
