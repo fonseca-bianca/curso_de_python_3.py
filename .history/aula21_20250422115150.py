@@ -10,7 +10,7 @@ Operadores Lógicos:
         - Se QLQR valor for considerado FALSO, a expressão ineira será FALSA
         - São considerados 'falsy':
             * 0, 0.0
-            * "", '', [], (), {} # SEM espaço
+            * "", '', [], (), {}
             * None: representa um NÃO valor
             * False
             * Ex.:

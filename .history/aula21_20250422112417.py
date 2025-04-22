@@ -1,3 +1,10 @@
+"""
+Operadores Lógicos:
+    and (e): TODAS condições precisam ser verdadeiras
+    or (ou): APENAS uma condição precisa ser verdadeira
+    not (não): inverte o valor lógico da condição
+"""
+
 #checar operador AND
 entrada = input("[E] entrar ou [S] sair? ")
 
@@ -14,3 +21,4 @@ elif entrada.lower() == "s":
     print("Saindo do sistema")
 else:
     print("Opção inválida")
+    

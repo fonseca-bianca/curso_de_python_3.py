@@ -10,11 +10,9 @@ Operadores Lógicos:
         - Se QLQR valor for considerado FALSO, a expressão ineira será FALSA
         - São considerados 'falsy':
             * 0, 0.0
-            * "", '', [], (), {} # SEM espaço
+            * "", '', [], (), {}
             * None: representa um NÃO valor
             * False
-            * Ex.:
-                print(bool(0.0)) # imprime False
 """
 
 # checar operador AND: pq estamos verificando 'entrada' e 'senha_digitada'
@@ -35,11 +33,3 @@ elif entrada.lower() == "s":
 else:
     print("Opção inválida")
     
-# Outra forma de escrever o cód acima:
-# if entrada.lower() == "e" and senha_digitada == senha_permitida:
-#     print("Entrada autorizada")
-# elif entrada.lower() == "s":
-#     print("Saindo do sistema")
-# else:
-#     print("Opção inválida")
-
