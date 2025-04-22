@@ -1,15 +1,6 @@
 # OPERADORES IN e NOT IN:
 nome = "Bianca"
-# print(nome[-2]) --> vai imprimir 'c' # impressão pelo nº negativo
-# print(nome[4]) --> vai imprimir 'c' # impressão pelo nº positivo
-
-"""
-Strings são ITERÁVEIS, portanto, os índices são contados da seguinte forma:
-    - 0 1 2 3 4 5
-    - B i a n c a
-    - -6-5-4-3-2-1
-"""
-
+# print(nome[-2]) --> vai imprimir 'c'
 print("b" in nome or "B" in nome)
 
 # A expressão ("b" or "B") retorna "b", pq no operador `or`, o 
@@ -26,7 +17,7 @@ print("anc" not in nome)
 sobrenome = input("Digite o seu sobrenome: ")
 encontrar = input("Digite o que deseja encontrar: ")
 
-if encontrar.upper() in sobrenome.upper():
+if encontrar.upper() in sobrenome:
     print(f"{encontrar} está em {sobrenome}")
 else:
     print(f"{encontrar} não está em {sobrenome}")

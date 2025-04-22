@@ -1,7 +1,6 @@
 # OPERADORES IN e NOT IN:
 nome = "Bianca"
-# print(nome[-2]) --> vai imprimir 'c' # impressão pelo nº negativo
-# print(nome[4]) --> vai imprimir 'c' # impressão pelo nº positivo
+# print(nome[-2]) --> vai imprimir 'c'
 
 """
 Strings são ITERÁVEIS, portanto, os índices são contados da seguinte forma:
