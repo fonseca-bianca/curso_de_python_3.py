@@ -1,8 +1,4 @@
 """ Interpolação básica de strings:
-- formatação de strings feita com o operador %
-** é uma forma de formatar strings, ou seja, colocar valores dentro de strings
-** a formatação por 'f-string' é a atualmente mais utilizada por ser 
-mais simples
 - se 3 valores forem colocados na Tupla, então a string vai esperar q 3 
 - valores sejam passados
 - s: string
