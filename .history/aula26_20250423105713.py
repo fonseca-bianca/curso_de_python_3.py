@@ -71,7 +71,7 @@ print(f"({var_alphabet: ^10})")
 print(f"{var_alphabet:#^10}")
 # output: ###ABC####
 
-print(f"{1000.323154542:0=+10,.1f}") # muito confuso, evitar usar
+print(f"{1000.323154542:0=+10,.1f}")
 # output: +001,000.3
 
 print(f"O hexadecimal de 1500 é {1500:08x}")
@@ -79,6 +79,3 @@ print(f"O hexadecimal de 1500 é {1500:08x}")
 # 8 dígitos, sendo os 4 primeiros preenchidos com zeros (0000)
 
 print(f"{var_alphabet!r}") 
-# output: 'ABC' --> imprime a representação da string (com aspas simples, pois
-# é o default do Python pra repr(string))
-# !r: mostra a representação interna, NÃO o conteúdo puro

@@ -71,7 +71,7 @@ print(f"({var_alphabet: ^10})")
 print(f"{var_alphabet:#^10}")
 # output: ###ABC####
 
-print(f"{1000.323154542:0=+10,.1f}") # muito confuso, evitar usar
+print(f"{1000.323154542:0=+10,.1f}")
 # output: +001,000.3
 
 print(f"O hexadecimal de 1500 é {1500:08x}")
