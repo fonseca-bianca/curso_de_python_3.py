@@ -8,8 +8,6 @@ try:
 except:
     print("O valor digitado não é um número")
 
-
-# No exemplo abaixo, NÃO há tratamento de ERRO:
 # if numero_str.isdigit(): --> .isdigit() SÓ aceita números inteiros
 #     numero_float = float(numero_str)
 #     print(f"O dobro de {numero_str} é {numero_float * 2}")
