@@ -9,7 +9,7 @@ Constante:
 
 
 velocidade = 60 # velocidade atual do carro
-quilometro = 100 # quilômetro da estrada onde está o carro, ex.: km 91 da BR-101
+quilometro = 98 # quilômetro da estrada onde está o carro, ex.: km 91 da BR-101
 
 RADAR_1 = 60 # velocidade máx radar 1
 LOCAL_1 = 100 # local onde o radar 1 está na estrada
@@ -35,8 +35,7 @@ carro_multado_radar_1 = carro_passou_radar_1 and velocidade_carro_multa
 
 if velocidade_carro_multa:
     print("Carro acima da velocidade máxima.")
-
-# quando o carro passa pelo Radar estando no limite de velocidade permitido   
+    
 if carro_passou_radar_1:
     print("Carro passou pelo Radar 1.")
     

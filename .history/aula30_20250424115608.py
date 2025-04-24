@@ -35,10 +35,9 @@ carro_multado_radar_1 = carro_passou_radar_1 and velocidade_carro_multa
 
 if velocidade_carro_multa:
     print("Carro acima da velocidade máxima.")
-
-# quando o carro passa pelo Radar estando no limite de velocidade permitido   
+    
 if carro_passou_radar_1:
-    print("Carro passou pelo Radar 1.")
+    print("Você foi multado.")
     
 if carro_multado_radar_1:
     print("Carro multado no Radar 1")

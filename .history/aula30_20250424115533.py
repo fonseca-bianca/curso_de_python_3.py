@@ -26,19 +26,18 @@ RADAR_RANGE = 1 # a distância antes e depois do radar q ele pega o carro
 #     print("Você está na velocidade permitida")
 
 # trecho acima reescrito:
-velocidade_carro_multa = velocidade > RADAR_1
+velocidade_carro_multa = velocidade >= RADAR_1
 carro_passou_radar_1 = (
-    quilometro > (LOCAL_1 - RADAR_RANGE) 
-    and quilometro < (LOCAL_1 + RADAR_RANGE)
+    quilometro >= (LOCAL_1 - RADAR_RANGE) 
+    and quilometro <= (LOCAL_1 + RADAR_RANGE)
 )
 carro_multado_radar_1 = carro_passou_radar_1 and velocidade_carro_multa
 
 if velocidade_carro_multa:
     print("Carro acima da velocidade máxima.")
-
-# quando o carro passa pelo Radar estando no limite de velocidade permitido   
+    
 if carro_passou_radar_1:
-    print("Carro passou pelo Radar 1.")
+    print("Você foi multado.")
     
 if carro_multado_radar_1:
     print("Carro multado no Radar 1")
