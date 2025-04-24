@@ -17,7 +17,7 @@ Exercício:
 
 nome = input ("Digite o seu nome (sem sobrenome): ")
 idade = input ("Digite sua idade: ")
-# contem_espaco = " "
+#contem_espaco = " "
 
 if nome and idade:       
     print(f"Seu nome é {nome}.")
