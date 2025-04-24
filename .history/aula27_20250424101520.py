@@ -22,7 +22,7 @@ print(variavel[0:9:4])
 #   começa no índice 0 (letra 'O').
 #   Pula 4 posições a partir do índice atual (letra 'l'):
 #       Próximo índice: 0 + 4 = 4 (letra 'm'). 
-#       Próximo índice (a partir do 'm'): 4 + 4 = 8 (letra 'o').
+#       Próximo índice: 4 + 4 = 8 (letra 'o').
 # índices selecionados: 0, 4, 8
 # 0: início
 # 9: quantidade total de caracteres (inclusive o espaço)

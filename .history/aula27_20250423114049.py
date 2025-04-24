@@ -12,18 +12,13 @@ variavel = "Olá mundo"
 print(len(variavel))
 # output: 9 (conta os espaços tbm)
 
-print(20*"-")
+print(len(variavel[0:9]))
 
 # FATIAMENTO:
 # os ':' é q indicam pro Python q é pra fazer o fatiamento
 # [i:f:p] ou [::] (i: início, f: fatiamento, p: pular/passo)
 print(variavel[0:9:4])
 # output: Omo 
-#   começa no índice 0 (letra 'O').
-#   Pula 4 posições a partir do índice atual (letra 'l'):
-#       Próximo índice: 0 + 4 = 4 (letra 'm'). 
-#       Próximo índice (a partir do 'm'): 4 + 4 = 8 (letra 'o').
-# índices selecionados: 0, 4, 8
 # 0: início
 # 9: quantidade total de caracteres (inclusive o espaço)
 # 4: quantidade de caracteres q deverá pular até ler o próximo caractere
