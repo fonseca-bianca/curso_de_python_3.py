@@ -45,15 +45,6 @@ nome válido e não uma letra solta, por exemplo
 """
 
 nome_usuario = input("Digite o seu primeiro nome: ")
-# tamanho_nome = len(nome_usuario) # outra forma de resolver
-# if tamanho_nome <= 1: 
-#     print("Digite um nome válido com, pelo menos, mais de uma letra")
-# elif tamanho_nome <= 4:
-#     print("Seu nome é curto ")
-# elif tamanho_nome == 5 or tamanho_nome <= 6:
-#     print("Seu nome é normal")
-# else:
-#     print("Seu nome é muito grande")
 
 if nome_usuario is None:
     print("Você precisa digitar um nome")
@@ -69,5 +60,11 @@ else:
 # if tamanho_nome <= 1:
 #     if tamanho_nome ...
 
-
-
+# if len(nome_usuario) <= 1:
+#     print("Digite um nome válido com, pelo menos, mais de uma letra")
+# elif len(nome_usuario) <= 4:
+#     print("Seu nome é curto ")
+# elif len(nome_usuario) == 5 or len(nome_usuario) <= 6:
+#     print("Seu nome é normal")
+# else:
+#     print("Seu nome é muito grande")

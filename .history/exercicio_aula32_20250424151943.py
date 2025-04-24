@@ -5,7 +5,7 @@ inteiro, informe que não é um número inteiro.
 """
 numero = input("Digite um número inteiro: ")
 try:
-    numero = int(numero) #aceita receber somente numero inteiro 
+    numero = int(numero) # aceita receber somente numero inteiro 
     if numero % 2 == 0:
         print(f"O numero {numero} é par.")
     else:
@@ -21,7 +21,8 @@ Bom dia 0-11, Boa tarde 12-17 e Boa noite 18-23.
 """
 
 hora_atual = input("Digite a hora atual (HH:mm): ")
-horas, minutos = map(int, hora_atual.split(':')) #recebendo string do usuário e transformando-a em HH:mm (split) e convertendo pra inteiro
+horas, minutos = map(int, hora_atual.split(':')) # recebendo string do 
+# usuário e transformando-a em HH:mm (split) e convertendo pra inteiro
 
 if (horas == 0 and minutos == 0) or (horas >= 0 and horas < 12):
     print("Bom dia!")
@@ -31,13 +32,27 @@ else:
     print("Boa noite")
 
 """
-Faça um programa que peça o primeiro nome do usuário. Se o nome tiver 4 letras ou 
-menos escreva "Seu nome é curto"; se tiver entre 5 e 6 letras, escreva 
-"Seu nome é normal"; maior que 6 escreva "Seu nome é muito grande". 
+Faça um programa que peça o primeiro nome do usuário. Se o nome tiver 4 
+letras ou menos escreva "Seu nome é curto"; se tiver entre 5 e 6 letras, 
+escreva "Seu nome é normal"; maior que 6 escreva "Seu nome é muito grande". 
 """
-nome_usuario = input("Digite o seu primeiro nome: ")
+"""nesse tipo de problema, o ideal é conferir primeiro se o usuário digitou um
+nome válido e não uma letra solta, por exemplo
+"""
 
-if len(nome_usuario) <= 4:
+nome_usuario = input("Digite o seu primeiro nome: ")
+"""
+outra forma de resolver:
+tamanho_nome = len(nome_usuario)
+tamanho_nome: vai devolver um INTEIRO
+
+aí ficaria:
+if tamanho_nome <= 1:
+    if tamanho_nome ...
+"""
+if len(nome_usuario) <= 1:
+    print("Digite um nome válido com, pelo menos, mais de uma letra")
+elif len(nome_usuario) <= 4:
     print("Seu nome é curto ")
 elif len(nome_usuario) == 5 or len(nome_usuario) <= 6:
     print("Seu nome é normal")
