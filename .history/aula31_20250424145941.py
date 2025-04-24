@@ -44,4 +44,4 @@ else:
 if passou_no_if is not None: # mesmo que: passou_no_if != None
     print("Passou no if")
 
-print(passou_no_if is not None) # False
+print(passou_no_if is not None)

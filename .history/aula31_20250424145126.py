@@ -36,12 +36,7 @@ if condicao:
 else:
     print("Não faça nada")
     
-if passou_no_if is None: # mesmo que: passou_no_if == None
+if passou_no_if is None:
     print("Não passou no if")
 else:
     print("Passou no if")
-    
-if passou_no_if is not None: # mesmo que: passou_no_if != None
-    print("Passou no if")
-
-print(passou_no_if is not None) # False
