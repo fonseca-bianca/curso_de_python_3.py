@@ -12,8 +12,9 @@ while condicao:
     print(f"O seu nome é {nome}")
     
     resposta = input("Digite 'sair' pra fechar o programa: ")
-    if resposta == "sair":
-        break 
+
+    if resposta == "sair" or resposta == "s":
+        break # esse 'break' busca o 'while' mais próximo dele
 
 print("Programa encerrado\n")
 """
@@ -22,6 +23,9 @@ pois a condição estabelecida é True, ou seja, necessitaria de uma condição 
 False ou outra condição True ou se um Break pra ocorrer sua interrupção
 """
 
-placar = 50
-print(f"O placar é: {placar}")
+
+
+
+
+
     

@@ -11,9 +11,10 @@ while condicao:
     nome = input("Digite o seu nome: ")
     print(f"O seu nome é {nome}")
     
-    resposta = input("Digite 'sair' pra fechar o programa: ")
+    resposta = input("Digite 'sair' pra fechar o programa: " or "s")
+
     if resposta == "sair":
-        break 
+        break # esse 'break' busca o 'while' mais próximo dele
 
 print("Programa encerrado\n")
 """
@@ -21,6 +22,8 @@ se NÃO colocar esse Break aq, o programa vai pedir a mesma coisa infinitamente,
 pois a condição estabelecida é True, ou seja, necessitaria de uma condição seguinte
 False ou outra condição True ou se um Break pra ocorrer sua interrupção
 """
+
+
 
 
 

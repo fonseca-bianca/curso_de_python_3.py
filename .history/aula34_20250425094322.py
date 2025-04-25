@@ -9,11 +9,12 @@ condicao = True
 
 while condicao:
     nome = input("Digite o seu nome: ")
-    print(f"O seu nome é {nome}")
+    print(f"\tO seu nome é {nome}")
     
-    resposta = input("Digite 'sair' pra fechar o programa: ")
-    if resposta == "sair":
-        break #esse 'break' busca o 'while' mais próximo dele
+    resposta = input("Digite 'sair' ou 's' pra fechar o programa: ")
+
+    if resposta == "sair" or resposta == "s":
+        break # esse 'break' busca o 'while' mais próximo dele
 
 print("Programa encerrado\n")
 """
