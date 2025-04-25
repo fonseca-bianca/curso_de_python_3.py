@@ -26,7 +26,3 @@ print(contador)
 # contador *= "2.2" output: "2.22.22.22.22.22.22.22.22.22.2"
 # contador *= "2" output: "2222222222"
 # contador *= 2 output: 20
-
-# OBS.:
-#   contador *= "2.2" é o mesmo que contador = contador * "2.2"
-#   contador **= 2 é o mesmo que contador = contador ** 2

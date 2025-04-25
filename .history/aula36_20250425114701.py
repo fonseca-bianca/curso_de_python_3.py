@@ -15,7 +15,8 @@ print("Acabou a contagem.")
 
 contador = 10
 
-contador *= "2.2" # vai multiplicar a "string" com o valor "2" pelo valor
+# contador *= "2.2" # vai multiplicar a "string" com o valor "2" pelo valor
+
 print(contador)
 
 # OBS.:
@@ -25,8 +26,4 @@ print(contador)
 # contador *= float("2.2") output: 22.0
 # contador *= "2.2" output: "2.22.22.22.22.22.22.22.22.22.2"
 # contador *= "2" output: "2222222222"
-# contador *= 2 output: 20
-
-# OBS.:
-#   contador *= "2.2" é o mesmo que contador = contador * "2.2"
-#   contador **= 2 é o mesmo que contador = contador ** 2
+contador *= 2 #output: 20
