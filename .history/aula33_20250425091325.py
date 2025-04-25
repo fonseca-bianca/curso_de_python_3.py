@@ -7,8 +7,7 @@ atribuir outro valor a ela
 
 # string[:3]} ABC {string[4:]--> :3 inicia no índice 3 | 4:  do índice 4 até 
 # o final
-# NÃO daria pra fazer: string[0] = "E" porque a string é Imutável
-string = "bruna Fonseca" 
+string = "bruna Fonseca" # variável 'string' recebe valor 'Bruna Fonseca'
 
 # criação variável 'outra_string' com interpolação de strings (f-string)
 # string[:3]: pega os 3 primeiros caracteres da string, ou seja, "bru"
@@ -17,10 +16,13 @@ string = "bruna Fonseca"
 # original, ou seja, "a Fonseca"
 
 outra_string = f'{string[:3]}123{string[4:]}'
-print(string.zfill(20)) 
+print(string.zfill(20)) #.zfil(): preenche com ZER0S à esquerda até chegar no
+# total de 20 cartacteres
 
 print(outra_string)
 print(string.capitalize()) 
+# .capitalize(): esse método é específico da string. Vai transformar o 
+# primeiro caractere da string em MAIÚSCULO
 
 print(string.title())
-
+# .title(): transforma a primeira letra de cada palavra em MAIÚSCULO

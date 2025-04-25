@@ -17,10 +17,14 @@ string = "bruna Fonseca"
 # original, ou seja, "a Fonseca"
 
 outra_string = f'{string[:3]}123{string[4:]}'
-print(string.zfill(20)) 
+print(string.zfill(20)) #.zfil(): preenche com ZER0S à esquerda até chegar no
+# total de 20 cartacteres
 
 print(outra_string)
 print(string.capitalize()) 
+# .capitalize(): esse método é específico da string. Vai transformar o 
+# primeiro caractere da string em MAIÚSCULO
 
 print(string.title())
+# .title(): transforma a primeira letra de cada palavra em MAIÚSCULO
 
