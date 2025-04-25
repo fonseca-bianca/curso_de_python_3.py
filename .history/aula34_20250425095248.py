@@ -17,12 +17,12 @@ while condicao:
         break # esse 'break' busca o 'while' mais próximo dele
 
 print("\tPrograma encerrado\n")
-
-# se NÃO colocar esse Break aq, o programa vai pedir a mesma coisa 
-# infinitamente, pois a condição estabelecida é True, ou seja, necessitaria 
-# de uma condição seguinte False ou outra condição True ou se um Break pra 
-# ocorrer sua interrupção
-
+"""
+se NÃO colocar esse Break aq, o programa vai pedir a mesma coisa 
+infinitamente, pois a condição estabelecida é True, ou seja, necessitaria 
+de uma condição seguinte False ou outra condição True ou se um Break pra 
+ocorrer sua interrupção
+"""
 
 
 

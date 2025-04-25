@@ -13,19 +13,17 @@ print("Acabou a contagem.")
 # OBS.: sobre operador lógico:
     #   while contador < 10:
     #     print(contador) ANTES do contador:
-    #         neste caso, vai imprimir de 0 a 9 (PQ CONTA 10 ELEMENTOS)
-    #   
-    # while contador <= 10:
+    #         neste caso, vai imprimir de 0 a 9
+    #   while contador <= 10:
     #     print(contador) ANTES do contador:
     #         neste caso, vai imprimir de 0 a 10
     
     #   while contador < 10:
     #     print(contador) DEPOIS do contador:
     #         neste caso, vai imprimir de 1 a 10
-    #   
-    # while contador <= 10:
+    #   while contador <= 10:
     #     print(contador) DEPOIS do contador:
-    #         neste caso, vai imprimir 1 a 11 (PQ CONTA 10 ELEMENTOS)
+    #         neste caso, vai imprimir 1 a 11
 
 # OBS. sobre ordem do print():
 #     print(contador) ANTES do incremento:
