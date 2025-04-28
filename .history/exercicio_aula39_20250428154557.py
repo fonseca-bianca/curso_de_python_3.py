@@ -10,8 +10,7 @@ while tamanho_nome < 30:
 
 nome_intercalado = ""
 for indice in nome: # ******Ana Maria da Silva******
-    nome_intercalado += f"*{indice}" # adc '*' ANTES do caractere
-        # se indice = "A", vira "*A"
+    nome_intercalado += f"*{indice}"
     
 print(nome) # output: nome com asteriscos ******Ana Maria da Silva******
 print(nome_intercalado.strip("*")) # output: remove asteriscos antes e 
