@@ -34,9 +34,3 @@ print("Acabou")
 # DENTRO DO LOOP WHILE (primeiro): 
 # - linha inicializada a cada iteração
 # - todas as linhas terão a mesma sequência de colunas (1,2,3,..., qnt_colunas)
-
-
-# Lógica da ocorrência dos While's:
-# - Primeiro itera pelas linhas,
-# - depois pelas colunas,
-# - e dentro de cada célula (linha/coluna) executa as colunas internas.

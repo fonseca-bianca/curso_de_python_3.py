@@ -1,6 +1,5 @@
 qnt_linhas = 5
 qnt_colunas = 5
-qtd_colunas_internas = 5
 
 linha = 1 # é o contador das linhas
 # linha = 0
@@ -12,16 +11,9 @@ while linha <= qnt_linhas:
     # linha += 1
     coluna = 1 # é o contador das colunas
     while coluna <= qnt_colunas:
-        # print(f"{linha=} {coluna=}") # OU (linha, coluna)ou(f"linha, coluna"):
+        print(f"{linha=} {coluna=}") # OU (linha, coluna)ou(f"linha, coluna"):
         # apareceria no console assim: linha, coluna 25x
-        # coluna += 1 # controla o 'while' interno (o da coluna)
-    # linha += 1
-    
-        colunas_internas = 1
-        while colunas_internas <= qtd_colunas_internas:
-            print(f"{linha=} | {coluna=} | {colunas_internas=}")
-            colunas_internas += 1
-        coluna += 1
+        coluna += 1 # controla o 'while' interno (o da coluna)
     linha += 1
     
 print("Acabou")
@@ -34,9 +26,3 @@ print("Acabou")
 # DENTRO DO LOOP WHILE (primeiro): 
 # - linha inicializada a cada iteração
 # - todas as linhas terão a mesma sequência de colunas (1,2,3,..., qnt_colunas)
-
-
-# Lógica da ocorrência dos While's:
-# - Primeiro itera pelas linhas,
-# - depois pelas colunas,
-# - e dentro de cada célula (linha/coluna) executa as colunas internas.
