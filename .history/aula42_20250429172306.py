@@ -18,10 +18,10 @@ while i < len(frase):
         continue           # vai retornar pro código (próximo 'while' já 
 # com o 'i' incrementado)
     
-    qtd_atual = frase.count(letra_atual)
+    qtd_letra_atual_mais_vezes = frase.count(letra_atual)
     
-    if qtd_vezes_letra < qtd_atual:
-        qtd_vezes_letra = qtd_atual
+    if qtd_vezes_letra < qtd_letra_atual_mais_vezes:
+        qtd_vezes_letra = qtd_letra_atual_mais_vezes
         letra_mais_vezes = letra_atual
 
     # print(letra_atual, qtd_letra_atual) # vai aparecer a letra e ao lado a 

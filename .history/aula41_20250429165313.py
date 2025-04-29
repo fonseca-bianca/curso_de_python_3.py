@@ -14,7 +14,7 @@ while i < len(string):
     # posição 'i' da 'string'
     letra = string[i]
     
-    # if letra == " ": # se letra for um espaço em branco, vai sair imediatam.
+    # if letra == " ":
     #     break
     
     print(letra) # caractere armazenado em 'letra' é impresso

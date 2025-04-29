@@ -14,9 +14,10 @@ while i < len(string):
     # posição 'i' da 'string'
     letra = string[i]
     
-    # if letra == " ": # se letra for um espaço em branco, vai sair imediatam.
+    # if letra == " ":
     #     break
     
+    break
     print(letra) # caractere armazenado em 'letra' é impresso
     i += 1 # 'i' incrementa em 1 e avança pro próximo caractere
     
@@ -25,7 +26,3 @@ else: # bloco que é executado somente quando o bloco 'while' foi completamente
     print("O else foi executado")
 
 print("Fora do bloco 'while'")
-
-
-# OBS.:
-#     - se tiver um 'break' DENTRO do 'while' --> 'else' NÃO será executado
