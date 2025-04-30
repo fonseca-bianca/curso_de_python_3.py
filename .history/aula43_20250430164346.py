@@ -1,7 +1,4 @@
-"""Introdução ao for / in - estrutura repetição para coisas FINITAS
-- usado quando sabemos quantas repetições teremos
-- NÃO precisa se preocupar com o índice
-"""
+"""Introdução ao for / in - estrutura repetição para coisas FINITAS"""
 
 palavra = "Python"
 
@@ -13,15 +10,7 @@ print(nova_palavra + '*') # inclui asterisco ao final da palavra
     
 # 'letra' é a variável criada para fazer a iteração. Esta irá 
 # ocorrer na palavra 'Python'
-
-print(20*"-")
-
-"""
-While:
-- usado quando NÃO sabemos quantas repetições teremos
-- precisa se preocupar com o índice, pq o contador evita o loop infinito
-    * há condição q precisa ser atendida
-"""    
+    
     
 # Código semelhante, mas com uso do 'while'
 # fica mais longo e mais confuso quando é para repetições de coisas Finitas
@@ -36,18 +25,11 @@ senha_digitada = ""
 # terá um caractere, o espaço (" "), o que a torna diferente de '123456', 
 # pq daí a senha correta seria: ' 123456'
 repeticoes_senha = 0
-limite_repeticoes = 5
 
-while senha_salva != senha_digitada and repeticoes_senha < limite_repeticoes:
-    senha_digitada = input(f'Sua senha ({repeticoes_senha + 1}x): ') 
-    # {repeticoes_senha + 1}x: pra tentativa começar no nº 1
+while senha_salva != senha_digitada:
+    senha_digitada = input(f'Sua senha ({repeticoes_senha}x): ')
     
     repeticoes_senha += 1
     
-if senha_digitada == senha_salva:
-    print(f"A senha digitada está correta")
-else:
-    print("Número de tentativas excedido, Aguarde 2h para tentar novamente")
-    
-print(f"As tentativas de acerto da senha foram: {repeticoes_senha}x")
+print(repeticoes_senha)
 print('Aquele laço acima pode ter repetições infinitas')

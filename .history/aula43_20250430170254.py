@@ -1,7 +1,4 @@
-"""Introdução ao for / in - estrutura repetição para coisas FINITAS
-- usado quando sabemos quantas repetições teremos
-- NÃO precisa se preocupar com o índice
-"""
+"""Introdução ao for / in - estrutura repetição para coisas FINITAS"""
 
 palavra = "Python"
 
@@ -13,15 +10,7 @@ print(nova_palavra + '*') # inclui asterisco ao final da palavra
     
 # 'letra' é a variável criada para fazer a iteração. Esta irá 
 # ocorrer na palavra 'Python'
-
-print(20*"-")
-
-"""
-While:
-- usado quando NÃO sabemos quantas repetições teremos
-- precisa se preocupar com o índice, pq o contador evita o loop infinito
-    * há condição q precisa ser atendida
-"""    
+    
     
 # Código semelhante, mas com uso do 'while'
 # fica mais longo e mais confuso quando é para repetições de coisas Finitas
