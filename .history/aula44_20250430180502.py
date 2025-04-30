@@ -34,10 +34,9 @@ tabuada_do_oito = range(0, 81, 8)
 for numero in tabuada_do_oito:
     print(numero)
     
-print(20*"-")
 
 # múltiplo de 6:
-multiplo_de_seis = range(0, 101, 6)
+multiplo_de_seis = range(0, 100, 6)
 for numero in multiplo_de_seis:
     print(numero)
 
