@@ -1,5 +1,5 @@
-# O for com range já faz o controle de início, parada e incremento 
-# automaticamente
+# o cód abaixo poderia ser escrito usando o 'while', porém, neste caso, aí
+# teríamos q fazer o controle manual de variável de loop
 
 print("Usando for:")
 for i in range(10): # percorre de 0 a 9
@@ -24,13 +24,7 @@ else:
     
 print(20*"-")
 
-
-# Já com o while, é preciso declarar, atualizar e testar manualmente a 
-# variável de controle (i e j no seu caso), e é mais fácil cometer erros 
-# como loops infinitos
-# Com 'While', o controle do loop deve ser feito manualmen, onde:
-#                    'i += 1' e 'j += 1'
-
+print("Usando While:")
 i = 0
 while i < 10:
     if i == 2:
