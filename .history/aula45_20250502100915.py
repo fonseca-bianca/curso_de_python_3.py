@@ -17,8 +17,8 @@ nome = iter("Luiz") # nome = "Luiz".__iter__()
 print(next(nome)) # nome.__next__()
 """
 
-nome = "Luiz" # iterável: percorre os elementos, no caso, caracteres da str 
-# iter = 'entregador de gás'
+nome = "Luiz" # iterável: percorrer os elementos, no caso, caracteres da 
+# string 'Luiz'
 # iterador = iter(nome) # iterator: criado a partir do iterável. É um obj q 
 # sabe COMO percorrer elementos do iterável
 

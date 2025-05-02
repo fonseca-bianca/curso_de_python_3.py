@@ -17,8 +17,8 @@ nome = iter("Luiz") # nome = "Luiz".__iter__()
 print(next(nome)) # nome.__next__()
 """
 
-nome = "Luiz" # iterável: percorre os elementos, no caso, caracteres da str 
-# iter = 'entregador de gás'
+nome = "Luiz" # iterável: percorrer os elementos, no caso, caracteres da 
+# string 'Luiz'
 # iterador = iter(nome) # iterator: criado a partir do iterável. É um obj q 
 # sabe COMO percorrer elementos do iterável
 
@@ -37,9 +37,5 @@ for letra in nome:
     
 print(20*"-")
 
-# texto = "Luiz".__iter__() 
-# Outra forma de escrever, só q mais simples:
-texto = iter("Luiz") # retorna o iterador, q é OUTRO objeto (NÃO é a str)
+texto = "Luiz".__iter__()
 print(texto)
-# Output: <str_ascii_iterator object at 0x0000019A7A1560B0> --> iterador da 
-# str q está no endereço de memória 0x0000019A7A1560B0 no pc
