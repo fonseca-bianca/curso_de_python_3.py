@@ -13,7 +13,7 @@ import os
 # função 'limpar_terminar()': vai limpar independentemente do SO
 # Passo a passo:
 # - import os:
-#       Esse módulo permite que você use comandos do SO como limpar a tela
+#       Esse módulo permite que você use comandos do sistema operacional, como limpar a tela.
 # - os.name:
 #       Essa expressão retorna uma string que identifica o sistema operacional:
 # - "nt" → Windows:
@@ -27,7 +27,7 @@ import os
 #           No Windows: os.system("cls")
 #           No Linux/macOS: os.system("clear")
 def limpar_terminal():
-    os.system("cls" if os.name == "nt" else "clear")
+    os.system("cls" if os.name == "nt"  else "clear")
 
 palavra_secreta = "tecnologia"
 letras_corretas = "" 
@@ -43,31 +43,27 @@ while True:
         continue
     
     if letra_digitada in palavra_secreta:
-        letras_corretas += letra_digitada # vai inserir a letra digitada na
-        # palavra_secreta se estiver correta
+        letras_corretas += letra_digitada
     else:
         print(f"A letra '{letra_digitada}' não está na palavra secreta")
     
-    palavra_formada = "" # criada DENTRO do while 
+    palavra_formada = "" # criada DENTRO do while
     # a cada execução do 'while', o 'for' irá fazer a conferência se a letra 
     # estiver na palvra secreta, então o programa vai exibir a letra. Essa 
-    # letra será mantida na palavra_secreta
-    for letra_digitada in palavra_secreta:
-        if letra_digitada in letras_corretas:
-            palavra_formada += letra_digitada 
+    # letra será mantida
+    for letra_secreta in palavra_secreta:
+        if letra_secreta in letras_corretas:
+            palavra_formada += letra_secreta 
             # print(letra_secreta) --> se esse print ficasse, então a palavra 
             # ficaria na vertical
-            # se a letra digitada não estiver na palavra secreta, então 
-            # o programa vai exibir um '*'
+        # se a letra digitada não estiver na palavra secreta, então o programa
+        # vai exibir um '*'
         else:
             palavra_formada += "*"
             # print("*") --> se esse print ficasse, então a palavra ficaria 
             # na vertical
     
-    print(f"Palavra formada: {palavra_formada}") 
-    # print é executado, mas é apagado pelo comando abaixo com a chamada da
-    # função limpar_terminal(), por isso só os prints abaixo são vistos 
-    # pelo usuário 
+    print(f"Palavra formada: {palavra_formada}") # print fora do 'for'
     
     if palavra_formada == palavra_secreta:
         limpar_terminal()

@@ -13,7 +13,7 @@ import os
 # função 'limpar_terminar()': vai limpar independentemente do SO
 # Passo a passo:
 # - import os:
-#       Esse módulo permite que você use comandos do SO como limpar a tela
+#       Esse módulo permite que você use comandos do sistema operacional, como limpar a tela.
 # - os.name:
 #       Essa expressão retorna uma string que identifica o sistema operacional:
 # - "nt" → Windows:
