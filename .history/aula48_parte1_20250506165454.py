@@ -44,9 +44,13 @@ print(bool(minha_lista)) # falsy: quando lista está vazia ela é SEMPRE false
 print(minha_lista, "Removido o item", minha_lista.pop())
 
 # removendo um item específico da lista com base no seu índice:
-# o del é um keyword, isto é, uma instrução do Python e não um .método()
+# minha_lista.__delitem__(1)
+# print(minha_lista, "Removido o item 2") # no caso, o True
+
+# é o mesmo q usar o del (q é um keyword, uma instrução do Python e não um
+# .método())
 del minha_lista[1]
-print(minha_lista, "Removido o item 2") # no caso, o True
+print(minha_lista, "Removido o item 2")
 
 print("----------------------------")
 

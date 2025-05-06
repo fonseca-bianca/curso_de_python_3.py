@@ -8,15 +8,9 @@ Métodos:
 -- tem q passar na ordem:
     (índice, qual o valor quer inserir)
 .pop(): remove item ao final ou no índice escolhido da lista
+.del(): apaga item no índice escolhido
 .clear(): limpa a lista
 .extend(): estende a lista
-* OBS.:
-    .__delitem__(1):
-        é um método especial (dunder method), ele é chamado por 'baixo dos
-        panos' da mesma forma como o 'del' é chamado.
-        Seu uso não é comum, pq ele serve mais como parte do funcionamento
-        interno do Python.
-
 +: concatena as listas
 CRUD (Creat, Read, Update, Delete) = minha_lista[i]
 # OBS.:
@@ -29,9 +23,8 @@ CRUD (Creat, Read, Update, Delete) = minha_lista[i]
 # type: mostra o tipo de valores
 string = "abc" # seus índices poderiam ser percorridos pela função (len())
 
-#               0     1        2        3    4 --> índices 
+#               0     1        2        3    4 --> itens 
 minha_lista = [123, True, "Ana Maria", 1.2, []] 
-#               1     2        3        4    5 --> itens
 
 print(minha_lista[2].upper(), type(minha_lista[2]))
 minha_lista[2] = "Rhaenyra Targaryen" # altera o índice na própria lista, 
@@ -40,20 +33,3 @@ print(minha_lista)
 
 print(bool(minha_lista)) # falsy: quando lista está vazia ela é SEMPRE false
 # print(minha_lista, type(minha_lista))
-
-print(minha_lista, "Removido o item", minha_lista.pop())
-
-# removendo um item específico da lista com base no seu índice:
-# o del é um keyword, isto é, uma instrução do Python e não um .método()
-del minha_lista[1]
-print(minha_lista, "Removido o item 2") # no caso, o True
-
-print("----------------------------")
-
-minha_lista.append(200)
-print(minha_lista, "Adicionado o item", 200)
-
-# o .append no print apresenta um retorno diferente:
-print(minha_lista, "Adicionado o item", minha_lista.append(200)) 
-# output: [123, True, 'Rhaenyra Targaryen', 1.2, 200] Adicionado o item None
-# None: o retorno de .append() no print() é None --> comportamento padrão
