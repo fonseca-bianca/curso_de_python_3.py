@@ -13,7 +13,7 @@ minha_lista.append("BB") # [1, 2, 3, 4, "BB"]
 ultimo_valor = minha_lista.pop() # remove "BB" e armazena ➜ [1, 2, 3, 4]
 ultimo_valor = minha_lista.pop(1) # remove o índice 1, que é o
 # número 2 ➜ [1, 3, 4]
-print(minha_lista, "Removido:", ultimo_valor)  
+print(minha_lista, "Removido:", minha_lista)  
 #                            ↑          ↑
 #                       [1, 3, 4]    "Removido: 2"
 del minha_lista[-1] # remove o último item (4) ➜ [1, 3]

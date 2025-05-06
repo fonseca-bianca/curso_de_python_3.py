@@ -7,7 +7,7 @@ muita memória
 
 minha_lista = [1, 2, 3, 4]
 # numero = minha_lista[3]
-minha_lista.append(50) # adc 50 ao final da lista ➜ [1, 2, 3, 4, 50]
+minha_lista.append(50) # adc 50 ao final da lista --> [1, 2, 3, 4, 50]
 minha_lista.pop() # remove o 50  ➜ [1, 2, 3, 4]
 minha_lista.append("BB") # [1, 2, 3, 4, "BB"]
 ultimo_valor = minha_lista.pop() # remove "BB" e armazena ➜ [1, 2, 3, 4]

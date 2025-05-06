@@ -7,14 +7,12 @@ muita memória
 
 minha_lista = [1, 2, 3, 4]
 # numero = minha_lista[3]
-minha_lista.append(50) # adc 50 ao final da lista ➜ [1, 2, 3, 4, 50]
+minha_lista.append(50) # [1, 2, 3, 4, 50]
 minha_lista.pop() # remove o 50  ➜ [1, 2, 3, 4]
 minha_lista.append("BB") # [1, 2, 3, 4, "BB"]
 ultimo_valor = minha_lista.pop() # remove "BB" e armazena ➜ [1, 2, 3, 4]
 ultimo_valor = minha_lista.pop(1) # remove o índice 1, que é o
 # número 2 ➜ [1, 3, 4]
 print(minha_lista, "Removido:", ultimo_valor)  
-#                            ↑          ↑
-#                       [1, 3, 4]    "Removido: 2"
-del minha_lista[-1] # remove o último item (4) ➜ [1, 3]
+del minha_lista[-1]
 print(minha_lista) 
