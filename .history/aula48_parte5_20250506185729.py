@@ -16,7 +16,7 @@ uso sinal = : aponta pro mesmo valor na memória (Mutável)
 ou `list(original)`
 """
 nome1 = "Ana"
-outra_variavel = nome1 # Cria uma NOVA 'cópia' do valor (pois str é imutável)
+outra_variavel = nome1 # Cria uma NOVA cópia do valor (pois str é imutável)
 nome1 = "João" # Atribui um novo valor a `nome1`, sem afetar `outra_variavel`
 print(nome1) # João. Tem um id na memória do programa 
 print(outra_variavel) # Ana. Tem outro id na memória do programa

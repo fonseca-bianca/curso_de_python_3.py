@@ -1,9 +1,0 @@
-"""CUIDADO com os tipos de Dados Mutáveis: list e copy
-uso sinal = : copiado o valor (Imutável)
-uso sinal = : aponta pro mesmo valor na memória (Mutável)
-"""
-nome1 = "Ana"
-outra_variavel = nome1
-nome1 = "João"
-print(nome1) #João. Tem um id na memória do programa 
-print(outra_variavel) # Ana. Tem outro id na memória do programa
