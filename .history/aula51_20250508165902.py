@@ -1,10 +1,6 @@
 """Introdução ao desempacotamento:
 - pra iteráveis;
-- ideal pra quando se tem MUITOS valores, mas só queremos imprimir um trecho
-ou uma variável específica
-- atribuir múltiplos valores de uma vez a variáveis individuais a partir de 
-estruturas iteráveis como listas, tuplas ou strings. Facilita a extração e o 
-uso organizado dos dados
+- ideal pra quando se tem MUITOS valores, mas só queremos
 - criando variáveis a partir de um pacote (tuple: coleção ordenada e imutável 
 de itens) de valores
 
@@ -16,13 +12,11 @@ vai ser "jogado" em uma outra varíavel
     OBS.: 
         *resto → armazena e permite usar
                 Captura todos os itens restantes como lista
-                PODE usar normalmente, como iterar, printar
             ex.: _, _,personagem3, *resto = ["Harry Potter", "Hermione", 
             "Rony"] 
                  print(personagem3, resto) # output: Rony []
             OU
         *_ → ignora o valor (NÃO vai usar)
-            SEMPRE captura o restante como lista
             Captura todos os itens restantes, mas “ignora” por convenção
             ex.: _, _, personagem3, *_ = ["Harry Potter", "Hermione", "Rony"]
                  print(personagem) 

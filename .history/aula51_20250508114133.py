@@ -1,15 +1,28 @@
-"""Introdução ao desempacotamento + tuple
-criando variáveis a partir de um pacote (tuple: coleção ordenada e imutável de itens) de valores
+"""Introdução ao desempacotamento
+criando variáveis a partir de um pacote (tuple: coleção ordenada e imutável 
+de itens) de valores
 CRIAR VARIÁVEL DE RESTO:
 vai servir pra armazenar os valores restantes q NÃO foram usados pra nada
 como se fosse uma "gaveta" pra armazenar os valores restantes. Isto é, vai ser
 'jogado' em uma outra varíavel
-- usar *nome_da_variavel_do_resto
+- usar *_ (CONVENÇÃO DEVS: asterisco + underline)
+OBS.: se colocar nome depois do underline, é como se dissesse q depois aqueles 
+valores serão usados é como se avisasse pro programa q essa variável 'gaveta' 
+criada existe, mas NÃO será usada
 """
 
 
-personagem1, *resto = ["Harry Potter", "Hermione", "Rony"]
-print(personagem1, resto)
+# personagem1, *_ = ["Harry Potter", "Hermione", "Rony"]
+# print(personagem1, _)
+
+_, _, personagem3, *_ = ["Harry Potter", "Hermione", "Rony"] 
+# 3 variáveis + a variável de resto '*_'
+print(personagem3)
+
+
+_, _, personagem3, *resto = ["Harry Potter", "Hermione", "Rony"] 
+# 3 variáveis + a variável de resto '*_'
+print(personagem3, resto) # irá mostrar a var de resto q é uma lista vazia
 
 
 # lista_de_personagens = ["Harry Potter", "Hermione", "Rony"]

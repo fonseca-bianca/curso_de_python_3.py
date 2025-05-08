@@ -1,10 +1,6 @@
 """Introdução ao desempacotamento:
 - pra iteráveis;
-- ideal pra quando se tem MUITOS valores, mas só queremos imprimir um trecho
-ou uma variável específica
-- atribuir múltiplos valores de uma vez a variáveis individuais a partir de 
-estruturas iteráveis como listas, tuplas ou strings. Facilita a extração e o 
-uso organizado dos dados
+- ideal pra quando se tem MUITOS valores, mas só queremos
 - criando variáveis a partir de um pacote (tuple: coleção ordenada e imutável 
 de itens) de valores
 
