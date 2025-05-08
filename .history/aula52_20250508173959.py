@@ -23,11 +23,6 @@
 personagens = ["Harry Potter", "Hermione", "Rony"]
 personagens = tuple(personagens) # converte lista pra tupla
 
-# Formas válidas de escrever uma Tupla:
-# personagens = ("Harry Potter", "Hermione", "Rony")
-# OU
-# personagens = "Harry Potter", "Hermione", "Rony"
-
 # personagens[1] = "Severo Snape" # TypeError: 'tuple' object does not...
 # vai gerar erro, pq .append() é método exclusivo de listas (mutáveis)
 # personagens.append("Severo Snape") # AttributeError: 'tuple' object has...
