@@ -6,7 +6,7 @@ lista1 = ["Dragon-ball", "Cavaleiros do Zodíaco", "Pokémon"]
 i = 0
 lista1.append("HOTD")
 indice = range(len(lista1)) # range percorre os índices (valores) da lista
-print(indice) # indice = range(0,4) --> o 4 é referente ao índice 3
+print(indice[1:4]) # indice = range(0,4) --> o 4 é referente ao índice 3
 
 
 for nome in lista1:

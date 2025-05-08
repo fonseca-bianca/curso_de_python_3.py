@@ -13,4 +13,5 @@ for nome in lista1:
     print([i],":", nome, type(nome))
     i += 1 # incrementando a variável 'i' manualmente dentro do loop for pra 
     # atualizar o valor a cada iteração
-    
+    break
+print(indice[1:4])
