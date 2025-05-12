@@ -8,19 +8,11 @@ iterator, logo, os valores NUNCA se esgotariam
 lista1 = ["Dragon-ball", "Cavaleiros do Zodíaco", "Pokémon"]
 lista1.append("HOTD")
 
-lista_enumerada = list(enumerate(lista1)) # type convertion
+lista_enumerada = list(enumerate(lista1))
 print(lista_enumerada)
-
-print(20 * "-")
-
 # enumera e retorna cada item da lista: [(0, 'Dragon-ball'), (1, 'Cavaleiros 
 # do Zodíaco'), (2, 'Pokémon'), (3, 'HOTD')]
 # cada item da lista é retornado dentro de uma tupla ex.: (0, 'Dragon-ball')
-# OBS.:
-    # Normalmente, o enumerate é colocado dentro de um 'for', pq ele é um 
-    # iterator e, por isso, ele não é colocado diretamente em uma variável, 
-    # pq é como se criasse sempre um novo iterator, logo, os valores NUNCA 
-    # se esgotariam
 
 
 # print(lista1)
@@ -33,27 +25,19 @@ print(20 * "-")
 for indice, desenho in lista_enumerada:
     print(indice, desenho, lista1[0]) 
     # print(lista_enumerada) # mostra o objeto da lista na memória do programa 
-    # É um iterator (já poderia chamar o next dentro do print
-    #   <enumerate object at 0x000002BA86392980>
+    # <enumerate object at 0x000002BA86392980>
 
-print(20 * "-")
 # o 'for' acima é o mesmo que:
-for item in enumerate(lista1):
-    indice, desenho = item
-    print(indice, desenho)
+# for item in enumerate(lista1):
+#     indice, desenho = item
+#     print(indice, desenho)
     
-print(20 * "-")
-
-for item in lista_enumerada:
-    print(item)
-
-
-print(20 * "-")
 
 # q tbm é o mesmo que:
-for tupla_enumerada in enumerate(lista1):
-    print('For da tupla:')
-    for valor in tupla_enumerada:
-        print(f'\t{valor}')
-#   \t: em Python, é uma tabulação. Cria espaço horizontal pra melhor 
-#   visualização dos itens
+# for tupla_enumerada in enumerate(lista1):
+#     print('For da tupla:')
+#     for valor in tupla_enumerada:
+#         print(f'\t{valor}')
+        
+#         # \t: em Python, é uma tabulação. Cria espaço horizontal pra melhor 
+#         # visualização dos itens

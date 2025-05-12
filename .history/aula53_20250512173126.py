@@ -55,5 +55,6 @@ for tupla_enumerada in enumerate(lista1):
     print('For da tupla:')
     for valor in tupla_enumerada:
         print(f'\t{valor}')
-#   \t: em Python, é uma tabulação. Cria espaço horizontal pra melhor 
-#   visualização dos itens
+        
+#         # \t: em Python, é uma tabulação. Cria espaço horizontal pra melhor 
+#         # visualização dos itens

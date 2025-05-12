@@ -1,7 +1,8 @@
-"""Enumerate:
+""" ENUMERATE:
 enumera valores de iteráveis (pegar índices)
-enumerate é um ITERATOR --> por ser MAIS COMPLEXO, normalmente ele NÃO é colocado diretamente 
-em uma variável, pq é como se criasse sempre um novo iterator, logo, os valores NUNCA se esgotariam
+enumerate é um ITERATOR --> por ser MAIS COMPLEXO, normalmente ele NÃO é
+colocado diretamente em uma variável, pq é como se criasse sempre um novo 
+iterator, logo, os valores NUNCA se esgotariam
 """
 
 lista1 = ["Dragon-ball", "Cavaleiros do Zodíaco", "Pokémon"]

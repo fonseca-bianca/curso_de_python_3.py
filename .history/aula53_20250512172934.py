@@ -39,6 +39,7 @@ for indice, desenho in lista_enumerada:
 print(20 * "-")
 # o 'for' acima é o mesmo que:
 for item in enumerate(lista1):
+    print("FOR do item (tupla_enumarada):")
     indice, desenho = item
     print(indice, desenho)
     
@@ -47,13 +48,11 @@ print(20 * "-")
 for item in lista_enumerada:
     print(item)
 
-
-print(20 * "-")
-
 # q tbm é o mesmo que:
-for tupla_enumerada in enumerate(lista1):
-    print('For da tupla:')
-    for valor in tupla_enumerada:
-        print(f'\t{valor}')
-#   \t: em Python, é uma tabulação. Cria espaço horizontal pra melhor 
-#   visualização dos itens
+# for tupla_enumerada in enumerate(lista1):
+#     print('For da tupla:')
+#     for valor in tupla_enumerada:
+#         print(f'\t{valor}')
+        
+#         # \t: em Python, é uma tabulação. Cria espaço horizontal pra melhor 
+#         # visualização dos itens
