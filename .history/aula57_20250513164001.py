@@ -18,7 +18,8 @@ print(lord_of_rings[2][1][2]) # imprime o número 20 da tupla dentro da
 
 
 #  variável lord dentro do loop for corresponde a cada uma das sublistas 
-# dentro da lista lord_of_rings.
+# dentro
+# da lista lord_of_rings.
 # lord será, em cada iteração, uma das listas aninhadas (internas) de 
 # lord_of_rings
 
