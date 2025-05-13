@@ -21,7 +21,7 @@ frase2 = "Hoje é sexta-feira 13!"
 frase3 = "Eu#sou#dev#python#com#orgulho"
 frase4 = "Eusouassimdesdecriança"
 frase5 = "Eu sou programadora Python, amo o que faço!"
-lista_letra_palavra = frase1.strip() # remove espaços início e fim
+lista_letra_palavra = frase1.strip()
 
 # .split():
 lista_palavras = frase1.split() # SEM argumento

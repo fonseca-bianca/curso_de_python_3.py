@@ -45,8 +45,8 @@ print(lista_palavras)
 
 
 # .strip():
-for i, frase1 in enumerate(lista_letra_palavra):
-    print(lista_letra_palavra[i]) 
+for frase1 in enumerate(lista_letra_palavra):
+    print(lista_letra_palavra) 
 print(lista_letra_palavra)
     
     
