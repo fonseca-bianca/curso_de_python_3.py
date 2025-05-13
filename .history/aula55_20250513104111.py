@@ -26,11 +26,11 @@ print(type(f"{numero3:.2f}"))
 Corrige o problema de imprecisão em números decimais muito grandes.
 Ex.: 0.1 + 0.7 = 0.7999999999999999
 
-    round(numero3, 1) → 0.8 (1 casa decimal)
+round(numero3, 1) → 0.8 (1 casa decimal)
 
-    round(numero3, 2) → 0.80 (2 casas decimais)
+round(numero3, 2) → 0.80 (2 casas decimais)
 
-É ideal pra cálculos financeiros, pois o round() não é preciso.
+É ideal para cálculos financeiros, pois o round() não é preciso.
 
 Ex.:
 
@@ -46,8 +46,7 @@ OBS:
     - Decimal = classe disponível dentro do módulo
 
 Dica:
-Use strings em vez de floats, pois Decimal converte corretamente uma 
-string para número decimal com precisão.
+Use strings em vez de floats, pois Decimal converte corretamente uma string para número decimal com precisão.
 
 Ex.:
 

@@ -23,34 +23,25 @@ print(type(f"{numero3:.2f}"))
 
 
 """ DECIMAL IMPORT:
-Corrige o problema de imprecisão em números decimais muito grandes.
-Ex.: 0.1 + 0.7 = 0.7999999999999999
+Corrige problema de imprecisão de números decimais finais de um número muito 
+GRANDE. Ex.: 0.1 + 0.7 = 0.7999999999999999
+#     round(numero3, 1) = 0.8 # 1 casa após o ponto
+#     round(numero3, 2) = 0.80 # 2 casas após o ponto
 
-    round(numero3, 1) → 0.8 (1 casa decimal)
-
-    round(numero3, 2) → 0.80 (2 casas decimais)
-
-É ideal pra cálculos financeiros, pois o round() não é preciso.
-
-Ex.:
-
-import decimal  # Módulo
-
-numero1 = decimal.Decimal('0.1')  
-numero2 = decimal.Decimal('0.7')  
-numero3 = numero1 + numero2  
+ex. de uso:
+import decimal (é um módulo)
+numero1 = decimal.Decimal(0.1)
+numero2 = decimal.Decimal(0.7)
+numero3 = numero1 + numero2
 print(numero3)
 
-OBS:
-    - decimal = módulo decimal
-    - Decimal = classe disponível dentro do módulo
+OBS.:
+   - decimal = módulo decimal
+   - Decimal = Classe dentro do módulo decimal
 
-Dica:
-Use strings em vez de floats, pois Decimal converte corretamente uma 
-string para número decimal com precisão.
-
-Ex.:
-
+OBS.: 
+Passar, ao invés de um FLOAT, umas STRING, pq daí a função Decimal vai fazer 
+a lógica de converter a STRING em FLOAT. O mais indicado é q fique assim:
 numero1 = decimal.Decimal('0.1')
 numero2 = decimal.Decimal('0.7')
 """

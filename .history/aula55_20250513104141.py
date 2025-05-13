@@ -46,8 +46,7 @@ OBS:
     - Decimal = classe disponível dentro do módulo
 
 Dica:
-Use strings em vez de floats, pois Decimal converte corretamente uma 
-string para número decimal com precisão.
+Use strings em vez de floats, pois Decimal converte corretamente uma string para número decimal com precisão.
 
 Ex.:
 
