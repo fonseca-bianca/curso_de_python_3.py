@@ -13,7 +13,6 @@ print(variavel_ternaria)
 
 valor_digitado = 10 # quando variável 'digito' for > 9 = 0 (retorne zero)
 novo_valor_digitado = valor_digitado if valor_digitado <= 9 else 0
-# o contrário da condição acima está na linha de baixo:
 novo_valor_digitado = 0 if valor_digitado > 9 else valor_digitado
 print(novo_valor_digitado)
 

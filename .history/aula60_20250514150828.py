@@ -5,15 +5,14 @@ if-else em uma linha
 <valor> if <condicao> else <outro_valor>
 """
 
-condicao = 10 == 10
+condicao = 10 == 11 # 
 variavel_ternaria = "Valor" if condicao else "Outro valor"
-
 print(variavel_ternaria)
 
-digito = 9 # quando variável 'digito' for > 9 = 0 (retorne zero)
-novo_digito = digito if digito <= 9 else 0
-novo_digito = 0 if digito > 9 else digito
-print(novo_digito)
+valor_digitado = 10 # quando variável 'digito' for > 9 = 0 (retorne zero)
+novo_valor_digitado = valor_digitado if valor_digitado <= 9 else 0
+novo_valor_digitado = 0 if valor_digitado > 9 else valor_digitado
+print(novo_valor_digitado)
 
 """
 se digito for 11, vai imprimir 0
