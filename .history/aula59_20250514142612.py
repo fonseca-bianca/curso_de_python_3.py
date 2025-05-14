@@ -38,20 +38,14 @@ print(a, u, indice_4)
 
 
 # iteração interna:
-# for nome in lista_nomes:
-#     print(nome, end=' ')
-#     # imprime todos os nomes da lista
+for nome in lista_nomes:
+    print(nome, end=' ')
     
-# Desempacotamento (pra elementos e objetos iteráveis):
-#    faz o mesmo que o for, mas de uma forma mais simples
-    #   print(*lista_nomes) --> imprime todos os nomes da lista     
-    #   print(*string_letra) --> imprime todos os nomes da lista
-    #   print(*tupla_frase) --> imprime todos os nomes da lista
 print(*lista_nomes)
 print(*string_letra)
 print(*tupla_frase)
 
-print(*lord_of_rings, sep='\n') # o separador 'sep' é uma quebra de linha
+print(*lord_of_rings, sep='\n')
 # remove os colchetes pq está sendo passada lista por lista pra dentro do 
 # print (como se cada lista fosse um valor)
 #   sep='\n': imprime cada lista em uma linha

@@ -51,7 +51,7 @@ print(*lista_nomes)
 print(*string_letra)
 print(*tupla_frase)
 
-print(*lord_of_rings, sep='\n') # o separador 'sep' é uma quebra de linha
+print(*lord_of_rings, sep='\n')
 # remove os colchetes pq está sendo passada lista por lista pra dentro do 
 # print (como se cada lista fosse um valor)
 #   sep='\n': imprime cada lista em uma linha

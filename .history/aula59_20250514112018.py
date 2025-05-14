@@ -29,29 +29,17 @@ lord_of_rings = [
         # *_ (resto) = vai imprimir 1,2,3, "e Whitney Houston"
         # como uma única lista
 
-a, b, c, d, indice_4, *_, u = lista_nomes 
-print(a, u, indice_4) 
-# vai imprimir: 
-#   Amy Lee, e Whitney Houston 2
-#   2 seria o elemento 'e', logo, ele corresponde ao índice 4
+# a, b, *_, u = lista_nomes
+# print(a, u)
 
-
-
-# iteração interna:
 # for nome in lista_nomes:
-#     print(nome, end=' ')
-#     # imprime todos os nomes da lista
+#     print(nome)
     
-# Desempacotamento (pra elementos e objetos iteráveis):
-#    faz o mesmo que o for, mas de uma forma mais simples
-    #   print(*lista_nomes) --> imprime todos os nomes da lista     
-    #   print(*string_letra) --> imprime todos os nomes da lista
-    #   print(*tupla_frase) --> imprime todos os nomes da lista
 print(*lista_nomes)
 print(*string_letra)
 print(*tupla_frase)
 
-print(*lord_of_rings, sep='\n') # o separador 'sep' é uma quebra de linha
+print(*lord_of_rings, sep='\n')
 # remove os colchetes pq está sendo passada lista por lista pra dentro do 
 # print (como se cada lista fosse um valor)
-#   sep='\n': imprime cada lista em uma linha
+# sep='\n': imprime cada lista em uma linha
