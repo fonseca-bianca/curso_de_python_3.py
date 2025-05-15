@@ -1,12 +1,14 @@
 """
 Calculo dos dígitos após o traço/a barra do CPF:
 
-Coletar a soma dos 9 primeiros dígitos do CPF, MAIS O PRIMEIRO DIGITO após o traço,
-multiplicando cada um dos valores por uma contagem regressiva começando de 10
+Coletar a soma dos 9 primeiros dígitos do CPF, MAIS O PRIMEIRO DIGITO após o 
+traço, multiplicando cada um dos valores por uma contagem regressiva começando 
+de 10
 1º: iniciar contagem regressiva em 10. 10 corresponde ao 1º número do CPF
 2º: os 9 primeiros dígitos do CPF serão colocados abaixo da contagem regressiva
 com os números respectivos (ex.: 746 = 10 9 8) 
-3º: multiplicando cada dígito do CPF pelo número da contagem regressiva respectivamente 
+3º: multiplicando cada dígito do CPF pelo número da contagem regressiva 
+respectivamente 
 
 ________________________________________________________________________________________
 **Cálculo do primeiro dígito do CPF (após o traço)**
@@ -32,7 +34,8 @@ contrário disso:
 while True:
     cpf = input("Insira o número do seu CPF (não isenrir símbolos): ")
 
-    if cpf == cpf[0] * len(cpf): # verificar se o cpf não possui todos os dígitos iguais
+    if cpf == cpf[0] * len(cpf): # verificar se o cpf não possui todos os
+        # dígitos iguais
         print("Número de CPF inválido! Os números NÃO podem ser iguais.")
     else:
         break
