@@ -73,7 +73,6 @@ cpf = re.sub(
 )
 print(cpf)
 
-# pergunta: a entrada (CPF) é sequencial? A resposta tem q ser um boolean
 cpf_eh_sequencial = cpf == cpf[0] * len(cpf) # isso é uma flag
 
 if cpf_eh_sequencial:
