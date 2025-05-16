@@ -14,9 +14,8 @@ import random # pra coisas aleatórias
 for _ in range(10): # vamos gerar 10 CPFs de números aleatórios
     nove_digitos = ""
     for i in range(9):
-        nove_digitos += str(random.randint(0 , 9)) 
-        # tem q converter o int pra string
-        # queremos 9 dígitos aleatórios entre 0 e 9
+        nove_digitos += str(random.randint(0 , 9)) # tem q converter o int 
+        # pra string
 
     # print(nove_digitos) 
     # sys.exit()
