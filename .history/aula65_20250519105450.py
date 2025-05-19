@@ -26,15 +26,6 @@ imprimir(1, 2, 3) # com argumentos (valores) dos parâmetros
 # def imprimir(a=1, b=2, c=3):
 #     print(a, b, c)
 
-#               OU
-    
-# def ola(a="Anna"): # valor padrão passado como argumento na definição da função
-#     print(f"{a}")
-
-# ola() # sem valor passado, vai usar o valor padrão passado no argumento na 
-# # definição da função
-
-
 # print("------------------------------------------------")
 # Definindo uma função sem parâmetros:
     # não precisa (nem pode) passar argumentos na chamada
@@ -52,7 +43,3 @@ def saudacao_prof(nome):
     print(f"Bom dia, {nome}!")
 
 saudacao_prof("Luiz Otávio")
-saudacao_prof("Gustavo Guanabara")
-
-# ou seja, sempre que chamar a função, ela vai imprimir "Bom dia, {nome}!" 
-# com o nome que você passar como argumento na chamada da função

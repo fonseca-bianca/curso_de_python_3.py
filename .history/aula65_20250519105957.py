@@ -25,14 +25,12 @@ imprimir(1, 2, 3) # com argumentos (valores) dos parâmetros
 
 # def imprimir(a=1, b=2, c=3):
 #     print(a, b, c)
+# ou
+      
+def ola(a="Anna"):
+    print(f"{a}")
 
-#               OU
-    
-# def ola(a="Anna"): # valor padrão passado como argumento na definição da função
-#     print(f"{a}")
-
-# ola() # sem valor passado, vai usar o valor padrão passado no argumento na 
-# # definição da função
+ola()
 
 
 # print("------------------------------------------------")

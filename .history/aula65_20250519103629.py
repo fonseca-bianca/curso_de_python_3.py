@@ -4,7 +4,7 @@ são trechos de cód usadas pra replicar/reutilizar determinada ação ao longo
 do cód.
 Podem receber valores como parâmetros (argumentos) e podem retornar valores 
 específicos.
-padrão: None (retornam Nada), NÃO valor, como se fosse um 'vazio' (falsy)
+padrão: none (NÃO retornam nada)
 """
 
 # Definindo uma função com parâmetros:
@@ -17,7 +17,6 @@ def imprimir(a, b, c): # com parâmetros
 
 imprimir(1, 2, 3) # com argumentos (valores) dos parâmetros
 
-
 # print("------------------------------------------------")
 # Definindo uma função com parâmetros opcionais:
     # se quiser deixar os parâmetros opcionais, você pode definir valores padrão, 
@@ -25,15 +24,6 @@ imprimir(1, 2, 3) # com argumentos (valores) dos parâmetros
 
 # def imprimir(a=1, b=2, c=3):
 #     print(a, b, c)
-
-#               OU
-    
-# def ola(a="Anna"): # valor padrão passado como argumento na definição da função
-#     print(f"{a}")
-
-# ola() # sem valor passado, vai usar o valor padrão passado no argumento na 
-# # definição da função
-
 
 # print("------------------------------------------------")
 # Definindo uma função sem parâmetros:
@@ -45,14 +35,3 @@ imprimir(1, 2, 3) # com argumentos (valores) dos parâmetros
 #     print("várias3")
 
 # imprimir( ) # sem definição de parâmetros
-
-print("------------------------------------------------")
-
-def saudacao_prof(nome):
-    print(f"Bom dia, {nome}!")
-
-saudacao_prof("Luiz Otávio")
-saudacao_prof("Gustavo Guanabara")
-
-# ou seja, sempre que chamar a função, ela vai imprimir "Bom dia, {nome}!" 
-# com o nome que você passar como argumento na chamada da função
