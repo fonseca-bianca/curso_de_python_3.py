@@ -18,9 +18,8 @@ def soma(x, y, z):
 
 # Argumento Nomeado: z=5
 # Argumento Posicional/NÃO Nomeado: 1 -> x, 2 -> y    
-soma(1, 2, z=5) 
-soma(20, 8, z=18) 
-# os próximos argumentos deverão ser Nomeados, pq o último é Nomeado
+soma(1, 2, z=5) # os próximos argumentos deverão ser Nomeados, pq o último é 
+# Nomeado
 
 # ERRO:
 # variáveis x, y e z foram criadas apenas dentro da função soma. Elas 

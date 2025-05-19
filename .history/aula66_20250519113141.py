@@ -11,16 +11,15 @@ OBS.2: execução da função: são os parênteses
 def soma(x, y, z):
     # print(x + y + z)
     # Parâmetro: vai na definição da função. É a variável
-    print(f"{x=} {y=} {z=}", "|", "x + y + z = ", x + y + z)
+    print(f"{x=}, {y=}, {z=}", "|", "x + y + z = ", x + y + z)
     
 # Argumento NÃO Nomeado/Posicional: 1, 2, 3
-# soma(1, 2, 3) # os argumentos são passados na ordem em que foram definidos
+soma(1, 2, 3) # os argumentos são passados na ordem em que foram definidos
 
-# Argumento Nomeado: z=5
-# Argumento Posicional/NÃO Nomeado: 1 -> x, 2 -> y    
-soma(1, 2, z=5) 
-soma(20, 8, z=18) 
-# os próximos argumentos deverão ser Nomeados, pq o último é Nomeado
+# Argumento Nomeado/Posicional: z=5
+# Argumento Posicional: 1 -> x, 2 -> y    
+soma(1, 2, z=5) # os próximos argumentos deverão ser Nomeados, pq o último é 
+# Nomeado
 
 # ERRO:
 # variáveis x, y e z foram criadas apenas dentro da função soma. Elas 
@@ -44,12 +43,3 @@ soma(20, 8, z=18)
 # print(y, x, z, sep="-")
 
 # 2. Ou modificar a função para retornar os valores
-
-# OBS.:
-    # se fizer:
-    # print(soma)
-    # output:
-    # <function soma at 0x000002931F74A340> 
-        # --> ou seja, está se referindo ao nome da função na memória, não ao 
-        # resultado dela
-        
