@@ -19,7 +19,7 @@ soma(7, 9 ,0) # bloco 'if' é executado pq 'z' recebe valor como parâmetro
 # 'z' NÃO é None, pq recebe o valor 0
 
 # Pra 'z' ter o valor None:
-soma(0, 0.0, None) # 'z' recebe valor None
+soma(1, 2, None) # 'z' recebe valor None
 
 
 # Logo,

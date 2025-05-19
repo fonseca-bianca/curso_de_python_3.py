@@ -19,14 +19,14 @@ soma(7, 9 ,0) # bloco 'if' é executado pq 'z' recebe valor como parâmetro
 # 'z' NÃO é None, pq recebe o valor 0
 
 # Pra 'z' ter o valor None:
-soma(0, 0.0, None) # 'z' recebe valor None
+soma(1, 2, None) # 'z' recebe valor None
 
 
 # Logo,
-# Situação:	                    Valor de z:	    Resultado no if z is not None:
+# Situação:	                 Valor de z:	Resultado no if z is not None:
 # z não informado	                None	     Falso      → executa else
-# z=0 informado	                    0	         Verdadeiro → executa if
-# z=5 informado	                    5	         Verdadeiro → executa if
+# z=0 informado	                0	         Verdadeiro → executa if
+# z=5 informado	                5	         Verdadeiro → executa if
 # z=None informado explicitamente	None	     Falso      → executa else
         
     
