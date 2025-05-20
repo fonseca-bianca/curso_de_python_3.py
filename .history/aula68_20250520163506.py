@@ -63,37 +63,18 @@ print("Fora da função novamente (x):", x)  # Continua x=1 (não foi alterado)
 
 
 print("Exemplo 4 - EXEMPLO PROFESSOR:")
-g = 1 # global
+g = 1
 
 def escopo_1():
-    g = 10  # Escopo LOCAL de escopo_1 e ENCLOSING (encerrante) para escopo_2
-            # local à função escopo_1()
+    g = 10
+    
     def escopo_2():
-        h = 2 # Escopo LOCAL de escopo_2
-        print("g:", g, "h:", h) 
+        h = 2
+        print("g:", g, "h:", h)
         
     escopo_2()
     print(g) 
     
-print(g) # lê 'g' variável global (=1)
-# lê 'g' variável global (=1), chama a função escopo_1 e imprime o valor de 'g'
-escopo_1() 
-# lê 'g' variável local (=10), chama a função escopo_2 e imprime o valor de 
-# 'g' (=10) e de 'h' (=2)
-# depois volta para escopo_1 e imprime o valor de 'g' (=10)
-print(g) # lê 'g' variável global (=1)
-
-""" 
-OBS.:
-🧠 Lembre-se da ordem de escopos em Python:
-    L      → E         → G      → B
-    (Local → Enclosing → Global → Built-in)
-Sigla	O que significa?
-L		Variáveis declaradas dentro da função atual
-E		Variáveis de funções que estão por fora da função atual e que a 
-envolvem, como se fossem um abraço — ou seja, funções aninhadas
-G		Variáveis declaradas no módulo principal (fora de funções)
-B		Variáveis embutidas do Python, como len(), print(), sum(), etc
-
-
-"""
+print(g) # g = 1
+escopo_1()
+print(g)

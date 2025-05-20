@@ -90,10 +90,10 @@ OBS.:
     (Local → Enclosing → Global → Built-in)
 Sigla	O que significa?
 L		Variáveis declaradas dentro da função atual
-E		Variáveis de funções que estão por fora da função atual e que a 
-envolvem, como se fossem um abraço — ou seja, funções aninhadas
+E		Variáveis de funções que envolvem (contêm) a função atual 
+(funções aninhadas)
 G		Variáveis declaradas no módulo principal (fora de funções)
-B		Variáveis embutidas do Python, como len(), print(), sum(), etc
+B		Variáveis embutidas do Python, como len, print, sum, etc
 
 
 """
