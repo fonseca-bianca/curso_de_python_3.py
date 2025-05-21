@@ -46,24 +46,6 @@ escopo_externo() # Vai imprimir 10 (x local de escopo_externo) e depois 11 20
 # (x e y locais de escopo_interno)
 print(x) # vai imprimir 1 (var global)
 
-"""
-OBS.:
-Quando o programa chama a função escopo_externo(), a execução é desviada 
-para essa função. A linguagem Python usa a CALL STACK para controlar essas 
-chamadas: um novo frame é empilhado na memória, com espaço próprio para as 
-variáveis locais dessa função.
-Nesse caso, ao chamar escopo_externo(), será criada uma var local x = 10
-Dentro dela, ao chamar escopo_interno(), outro frame é adicionado à pilha, 
-com suas próprias variáveis locais (x = 11 e y = 20).
-Ao final de cada função, seu frame é removido da Call Stack, e o programa 
-retorna para o ponto onde a função foi chamada.
-
-CALL STACK:
-    escopo_interno() -> x = 11, y = 20
-    escopo_externo() -> x = 10
-    <module> -> x = 1
-"""
-
 # OBS.: 
 #   VAI PULAR DE DENTRO PRA FORA PRA ENCONTRAR UM 'X' VÁLIDO, NUNCA o contrário
 # conforme está acima comentado o cód, vai ser impresso: 1 2

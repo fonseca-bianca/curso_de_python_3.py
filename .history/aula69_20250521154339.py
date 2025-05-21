@@ -57,11 +57,6 @@ Dentro dela, ao chamar escopo_interno(), outro frame é adicionado à pilha,
 com suas próprias variáveis locais (x = 11 e y = 20).
 Ao final de cada função, seu frame é removido da Call Stack, e o programa 
 retorna para o ponto onde a função foi chamada.
-
-CALL STACK:
-    escopo_interno() -> x = 11, y = 20
-    escopo_externo() -> x = 10
-    <module> -> x = 1
 """
 
 # OBS.: 
