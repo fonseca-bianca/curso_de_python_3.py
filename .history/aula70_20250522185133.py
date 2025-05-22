@@ -40,16 +40,15 @@ def olha_so(c, d):
     # pq se a outra condição for FALSE, então o 2º return será 
     # lido
     
+    
 
 olha1 = olha_so(2, 2) 
 olha2 = olha_so(3, 3)
 
-print(olha1 + olha2) 
-
 print(20*"-")
-print(olha1)  # Literal[11, 4]
-print(olha2)  # Literal[11, 6]
-
+print(olha1) # Olha só que legal
+print(olha2) # Olha só que legal
+print(olha1 + olha2) 
 
 
 # Porque o código retorna "Olha só que legal" 2 vezes?

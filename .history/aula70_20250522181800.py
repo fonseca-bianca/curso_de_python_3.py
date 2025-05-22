@@ -15,41 +15,36 @@ print():
 """
 
 def soma(x, y):
-    return x + y
-    # print(1 + 1) --> Code is unreachable (inalcançável após o 'return')
+    # return x + y
+    print(x, y)
+    # print(1 + 1) --> Code is unreachable
 
-soma1 = soma(1, 1) # retorna Literal[2]
-soma2 = soma(2, 2) # retorna Literal[4]
+soma1 = soma(1, 1)
+soma2 = soma(2, 2)
 
 print(soma1 + soma2) 
-
 # o código irá retornar a soma das duas variáveis soma1 e soma2, pq tem o 
 # 'return' acima somando os valores de 'x' e 'y' 
 
 
-def olha_so(c, d):
-    print("Olha")
-    print("só")
-    print("que")
-    print("legal")
+# def soma(x, y):
+#     print("Olha")
+#     print("só")
+#     print("que")
+#     print("legal")
     
-    if c > 11:
-        return 11 # 1 return por função e retornará um valor (lista, tupla etc)
-    return c + d 
-    # aq ´é como se fosse o 'else', mas NÃO precisa especificar, 
-    # pq se a outra condição for FALSE, então o 2º return será 
-    # lido
+#     if x > 10:
+#         return 10
+#     return x + y # aq ´é como se fosse o 'else', mas NÃO precisa especificar, 
+#                  # pq se a outra condição for FALSE, então o 2º return será 
+#                  # lido
+    
     
 
-olha1 = olha_so(2, 2) 
-olha2 = olha_so(3, 3)
+# soma1 = soma(1, 1)
+# soma2 = soma(2, 2)
 
-print(olha1 + olha2) 
-
-print(20*"-")
-print(olha1)  # Literal[11, 4]
-print(olha2)  # Literal[11, 6]
-
+# print(soma1 + soma2) 
 
 
 # Porque o código retorna "Olha só que legal" 2 vezes?
@@ -79,17 +74,3 @@ print(olha2)  # Literal[11, 6]
 # def diminui(a, b): 
 #     ...
 #  essa função retorna None, pq não foi especificado o q ela deve retornar
-
-
-# def somatorio(x, y):
-#     print(x + y)
-    
-# somatorio1 = somatorio(1, 1)
-# somatorio2 = somatorio(2, 2)
-
-# print(somatorio1 + somatorio2) 
-
-# TypeError: unsupported operand type(s) for +: 'NoneType' and 'NoneType'
-#   a função somatorio não retorna nada, mas precisamos que ela retorne 
-# (uso do 'return') algo justamente pra saber o q fazer com o retorno 
-# dela (somar, subtrair etc.)

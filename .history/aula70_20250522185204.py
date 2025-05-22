@@ -47,8 +47,8 @@ olha2 = olha_so(3, 3)
 print(olha1 + olha2) 
 
 print(20*"-")
-print(olha1)  # Literal[11, 4]
-print(olha2)  # Literal[11, 6]
+print(olha1) 
+print(olha2) 
 
 
 
