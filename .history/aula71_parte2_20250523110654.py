@@ -22,14 +22,15 @@ soma(1, 2, 3, 4, 5, 6)
 
 print("Outra forma de fazer a mesma coisa, mas usando o desempacotamento: ")
 
-numeros = (1, 2, 3, 4, 5, 6) # declarada a tupla antes da função
-def soma_b(*args):
-    total_b = 0
-    for numero_b in args:
-        print("Soma total anterior e total seguinte: ", total_b, "+", numero_b)
-        total_b += numero_b # total_b = total_b + numero_b
-        print("Total", total_b)
+
+numeros = (1, 2, 3, 4, 5, 6)
+def soma2(*args):
+    total2 = 0
+    for numero2 in args:
+        print("Soma total anterior e total seguinte: ", total2, "+", numero2)
+        total2 += numero2
+        print("Total", total2)
         
-    print(total_b)
+    print(total2)
     
-soma_b(*numeros) # desempacotamento da tupla em argumentos separados
+soma(*numeros) # desempacotamento

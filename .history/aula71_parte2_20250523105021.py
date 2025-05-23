@@ -1,6 +1,6 @@
 """
 args - Argumentos NÃO nomeados
-* - *args (empacotamento e desempacotamento)
+* - *args (desempacotamento)
 
 """
 # Desempacotamento:
@@ -8,7 +8,7 @@ x, y, *resto = 1, 2, 3, 4
 print(x, y, resto)
 
 def soma(*args):
-    total = 0
+    total = 0 # acumulação: soma ele mesmo mais o valor que está sendo passado
     for numero in args:
         print("Soma total anterior e seguinte: ", total, "+", numero)
         total += numero

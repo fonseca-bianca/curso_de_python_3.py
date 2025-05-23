@@ -22,6 +22,7 @@ soma(1, 2, 3, 4, 5, 6)
 
 print("Outra forma de fazer a mesma coisa, mas usando o desempacotamento: ")
 
+
 numeros = (1, 2, 3, 4, 5, 6) # declarada a tupla antes da função
 def soma_b(*args):
     total_b = 0
@@ -32,4 +33,4 @@ def soma_b(*args):
         
     print(total_b)
     
-soma_b(*numeros) # desempacotamento da tupla em argumentos separados
+soma_b(*numeros) # desempacotamento

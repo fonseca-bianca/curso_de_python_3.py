@@ -32,4 +32,4 @@ def soma_b(*args):
         
     print(total_b)
     
-soma_b(*numeros) # desempacotamento da tupla em argumentos separados
+soma_b(*numeros) # desempacotamento
