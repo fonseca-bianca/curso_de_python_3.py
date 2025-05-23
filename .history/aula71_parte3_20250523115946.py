@@ -1,7 +1,4 @@
 """
-Uso de *args em Função pesonalizada (criada por nós mesmos) e
-NÃO uso de *args na função sum():
-
 Função sum():
 - soma todos os números de uma lista ou tupla
 - é padrão do Python
@@ -26,12 +23,6 @@ ou tupla
 ex.:
     soma(*numeros) ✅ → Correto, porque sua função personalizada espera 
 múltiplos argumentos
-
-** SOBRE O *args:
-✅ *args é usado apenas na definição de funções — sejam elas:
-    - funções personalizadas
-                OU
-    - funções internas do Python (como print(), max(), min())
 
 """
 

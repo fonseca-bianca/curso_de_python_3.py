@@ -12,8 +12,8 @@ print(soma_peq)
 print(sum((1, 2, 3))) # a tupla deve ser copiada com os parênteses junto
 
 # tbm pode ser feito assim com a função 'sum':
-numeros = 1, 2, 3 # tupla
-outra_soma_peq = soma(*numeros) # isso é DESEMPACOTAMENTO. Ocorre Desempacotamento da tupla 'numeros'
+numeros = 1, 2, 3, 4, 5, 6, 7, 8 # tupla
+outra_soma_peq = soma(*numeros) # Desempacotamento da tupla 'numeros'
 print(outra_soma_peq)
 # soma = sum(numeros) 
 print(sum(numeros)) # NÃO há Desempacotamento
