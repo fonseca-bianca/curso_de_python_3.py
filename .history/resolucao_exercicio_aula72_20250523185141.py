@@ -18,24 +18,33 @@ def multiplicar(*args):
 # pode acentuação, porém, NÃO é recomendado
 multiplicação = multiplicar(10, 2, 3, 4, 5)
 print(multiplicação)
-print(10*2*3*4*5)
+print(
+    f"Confere o resultado da multiplicação: "
+    f"{multiplicar(10*2*3*4*5)}"
+)# confere q os números passados acima resultam em 1200
 
 
 # Crie uma função fala se um número é par ou ímpar.
 # Retorne se o número é par ou ímpar.
-def par_impar(numero):
+def par_ou_impar(numero):
     multiplo_de_dois = numero % 2 == 0
 
     if multiplo_de_dois:
         return f'{numero} é par'
     return f'{numero} é ímpar'
 
+# OBS.:
+#     - quando o cód atinge a função 'return', ele para de executar o cód ali
+#     mesmo, logo, NÃO há necessidade de usar o 'else' depois do 'if'
+#     - o 'return' já é o fim da função, então, se o 'if' for TRUE, ele vai
+#     executar o 'return' e não vai executar o 'else'
 
-outro_par_impar = par_impar
-dois_e_par = outro_par_impar(2)
+outro_par_ou_impar = par_ou_impar
+dois_e_par = outro_par_ou_impar(2) # executa a função e guarda o resultado 
+# da execução
 print(dois_e_par)
-print(par_impar(3))
-print(par_impar(15))
-print(par_impar(16))
+print(par_ou_impar(3))
+print(par_ou_impar(15))
+print(par_ou_impar(16))
 
-print(par_impar is outro_par_impar)
+print(par_ou_impar is outro_par_ou_impar)

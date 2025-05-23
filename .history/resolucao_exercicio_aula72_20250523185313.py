@@ -31,9 +31,7 @@ def par_ou_impar(numero):
 
     if multiplo_de_dois:
         return f'{numero} é par'
-    return f'{numero} é ímpar' # esse 'return' é o mesmo q o 'else', por isso
-# ele NÃO fica embaixo do 'return' anterior, pq se não ele NUNCA seria
-# executado
+    return f'{numero} é ímpar'
 
 # OBS.:
 #   - quando o cód atinge a função 'return', ele para de executar o cód ali
