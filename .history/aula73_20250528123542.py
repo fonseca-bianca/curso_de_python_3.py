@@ -11,13 +11,7 @@ Em Python, funções são consideradas "cidadãs de primeira classe".
 Isso significa que você pode tratá-las como se fossem qlqr outro 
 tipo de dado, como números, strings, ou listas. 
     O que vc pode fazer com uma variável, vc também pode fazer com uma função. 
-    Abaixo estão os principais pontos.
- 
-Funções em Python são extremamente flexíveis e podem ser usadas como qualquer 
-outro tipo de dado. Elas podem ser atribuídas a variáveis, passadas como 
-parâmetros e retornadas de outras funções. Isso oferece uma maneira poderosa 
-de estruturar seu código de forma mais dinâmica e modular.
-
+    Abaixo estão os principais pontos:
 """
 
 def saudacao(msg):
@@ -27,7 +21,7 @@ saudacao_2 = saudacao # saudacao_2 aponta pra saudacao (referência ao q
 # está na memória)
 
 v = saudacao_2("Bom dia")
-print(v) # retorno da função sendo impresso
+print(v)
 
 
 print("---------------------------------------------------------------------")
@@ -45,19 +39,17 @@ nova_saudacao = saudacao_manha
 
 print(nova_saudacao("Bom dia"))  
 # chama 'nova_saudacao' com a mensagem "Bom dia", funcionando exatamente 
-# como a função original. 'Bom dia' é passado como ARGUMENTO para a função
+# como a função original
 
 # Função que recebe outra função como argumento:
 def executa_funcao(func, mensagem):
     return func(mensagem)
 
 print(executa_funcao(nova_saudacao, "Boa tarde"))
-# 'executa_funcao' recebe como PARÂMETRO (nome usado na definição da função) 
-# a função 'nova_saudacao' e, como ARGUMENTO (valor passado qndo função 
-# é chamada), a mensagem "Boa tarde"
-# Esses valores são passados para os parâmetros 'func' e 'mensagem'
-# Dentro de 'executa_funcao', a função recebida é executada com a mensagem
-# como argumento
+# 'executa_funcao' recebe como argumento a função 'nova_saudacao' e a 
+# mensagem "Boa tarde"
+# Dentro de 'executa_funcao', a função passada é executada com o argumento 
+# fornecido
 
 
 # Retornar uma função de dentro de outra função:
@@ -71,18 +63,9 @@ print(saudacao_personalizada("Olá"))
 # nesse caso, a função 'criar_saudacao' retorna outra função (saudacao_interna)
 # Agora, saudacao_personalizada é uma nova função q pode ser chamada mais tarde
 
-# cód prof.:
-def saudacao_prof(msg, nome):
-    return f'{msg}, {nome}!'
-
-
-def executa_prof(funcao, *args): # Empacota os argumentos em uma tupla
-    return funcao(*args) # Desempacota os args da tupla e passa pra função
-
-
-print(
-    executa_prof(saudacao_prof, 'Bom dia', 'Luiz')
-)
-print(
-    executa_prof(saudacao_prof, 'Boa noite', 'Maria')
-)
+""" 
+Funções em Python são extremamente flexíveis e podem ser usadas como qualquer 
+outro tipo de dado. Elas podem ser atribuídas a variáveis, passadas como 
+parâmetros e retornadas de outras funções. Isso oferece uma maneira poderosa 
+de estruturar seu código de forma mais dinâmica e modular.
+"""

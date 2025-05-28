@@ -11,13 +11,7 @@ Em Python, funções são consideradas "cidadãs de primeira classe".
 Isso significa que você pode tratá-las como se fossem qlqr outro 
 tipo de dado, como números, strings, ou listas. 
     O que vc pode fazer com uma variável, vc também pode fazer com uma função. 
-    Abaixo estão os principais pontos.
- 
-Funções em Python são extremamente flexíveis e podem ser usadas como qualquer 
-outro tipo de dado. Elas podem ser atribuídas a variáveis, passadas como 
-parâmetros e retornadas de outras funções. Isso oferece uma maneira poderosa 
-de estruturar seu código de forma mais dinâmica e modular.
-
+    Abaixo estão os principais pontos:
 """
 
 def saudacao(msg):
@@ -71,18 +65,9 @@ print(saudacao_personalizada("Olá"))
 # nesse caso, a função 'criar_saudacao' retorna outra função (saudacao_interna)
 # Agora, saudacao_personalizada é uma nova função q pode ser chamada mais tarde
 
-# cód prof.:
-def saudacao_prof(msg, nome):
-    return f'{msg}, {nome}!'
-
-
-def executa_prof(funcao, *args): # Empacota os argumentos em uma tupla
-    return funcao(*args) # Desempacota os args da tupla e passa pra função
-
-
-print(
-    executa_prof(saudacao_prof, 'Bom dia', 'Luiz')
-)
-print(
-    executa_prof(saudacao_prof, 'Boa noite', 'Maria')
-)
+""" 
+Funções em Python são extremamente flexíveis e podem ser usadas como qualquer 
+outro tipo de dado. Elas podem ser atribuídas a variáveis, passadas como 
+parâmetros e retornadas de outras funções. Isso oferece uma maneira poderosa 
+de estruturar seu código de forma mais dinâmica e modular.
+"""

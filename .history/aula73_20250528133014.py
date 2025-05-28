@@ -76,8 +76,8 @@ def saudacao_prof(msg, nome):
     return f'{msg}, {nome}!'
 
 
-def executa_prof(funcao, *args): # Empacota os argumentos em uma tupla
-    return funcao(*args) # Desempacota os args da tupla e passa pra função
+def executa_prof(funcao, *args):
+    return funcao(*args)
 
 
 print(

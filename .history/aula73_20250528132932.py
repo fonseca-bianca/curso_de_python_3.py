@@ -76,13 +76,13 @@ def saudacao_prof(msg, nome):
     return f'{msg}, {nome}!'
 
 
-def executa_prof(funcao, *args): # Empacota os argumentos em uma tupla
-    return funcao(*args) # Desempacota os args da tupla e passa pra função
+def executa_prof(funcao, *args):
+    return funcao(*args)
 
 
 print(
-    executa_prof(saudacao_prof, 'Bom dia', 'Luiz')
+    executa_prof(saudacao, 'Bom dia', 'Luiz')
 )
 print(
-    executa_prof(saudacao_prof, 'Boa noite', 'Maria')
+    executa_prof(saudacao, 'Boa noite', 'Maria')
 )
