@@ -4,9 +4,12 @@ Crie funções que duplicam, triplicam e quadruplicam o número recebido
 como parâmetro.
 """
 
-def criar_multiplicador(multiplicador): # função-MÃE recebe 'multiplicador' como parâmetro
+def criar_multiplicador(multiplicador): 
+    # função-MÃE recebe 'multiplicador' como parâmetro
     def multiplicar(numero): #função-FILHA recebe 'numero' como parâmetro
-        return numero * multiplicador # parâmetro da função-FILHA sendo multiplicado pelo parâmetro da função-MÃE recebe 'numero' como parâmetro
+        return numero * multiplicador 
+    # parâmetro da função-FILHA sendo multiplicado pelo parâmetro da função-MÃE
+    # recebe 'numero' como parâmetro
     return multiplicar 
 
 duplicar = criar_multiplicador(2)

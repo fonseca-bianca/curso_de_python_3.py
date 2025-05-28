@@ -10,7 +10,7 @@ def criar_multiplicador(multiplicador):
         return numero * multiplicador 
     # parâmetro da função-FILHA sendo multiplicado pelo parâmetro da função-MÃE
     # recebe 'numero' como parâmetro
-    return multiplicar
+    return multiplicar, multiplicador
 
 duplicar = criar_multiplicador(2)
 """ 
