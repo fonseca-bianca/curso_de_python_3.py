@@ -8,7 +8,8 @@ int, str, float, bool, tuple (elementos Tupla tbm devem ser Imutáveis).
 podem ser de qlqr tipo, podendo ser tbm OUTRO dicionário.
 -> Dicionário:
 {} ou 
-classe dict (ex.: pessoa = dict(nome='Luiz', sobrenome='Miranda') --> args nomeados):
+classe dict (ex.: pessoa = dict(nome='Luiz', sobrenome='Miranda') 
+--> args nomeados):
 usados pra criar os dicionários.
 IMUTÁVEIS: int, str, float, bool, tuple
 OU

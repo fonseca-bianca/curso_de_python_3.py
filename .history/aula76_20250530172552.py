@@ -68,4 +68,4 @@ print()
 # output: {'nome': 'Luiz', 'sobrenome': 'Miranda'} <class 'dict'>
 
 for chave in pessoa:
-    print(chave, pessoa[chave])
+    print(chave)

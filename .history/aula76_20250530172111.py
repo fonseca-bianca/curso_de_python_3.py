@@ -63,9 +63,8 @@ print(pessoa['idade'])
 
 print()
 
-# pessoa = dict(nome='Luiz', sobrenome='Miranda')
-# print(pessoa, type(pessoa)) 
-# output: {'nome': 'Luiz', 'sobrenome': 'Miranda'} <class 'dict'>
+pessoa = dict()
+print(dict)
 
 for chave in pessoa:
-    print(chave, pessoa[chave])
+    print(chave)

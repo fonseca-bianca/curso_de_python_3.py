@@ -8,8 +8,8 @@ int, str, float, bool, tuple (elementos Tupla tbm devem ser Imutáveis).
 podem ser de qlqr tipo, podendo ser tbm OUTRO dicionário.
 -> Dicionário:
 {} ou 
-classe dict (ex.: pessoa = dict(nome='Luiz', sobrenome='Miranda') --> args nomeados):
-usados pra criar os dicionários.
+classe dict (ex.: pessoa = dict(nome='Luiz', sobrenome='Miranda') 
+--> args nomeados): usados pra criar os dicionários.
 IMUTÁVEIS: int, str, float, bool, tuple
 OU
 MUTÁVEIS: list, dict
@@ -23,7 +23,16 @@ pessoa = {
     'endereços': [
         {'rua': 'Av. Paulista', 'numero': 123},
         {'rua': 'Av. Rio Branco', 'numero': 456}
-    ]
+    ],
+    # em 'endereços' usamos uma lista e dentro dela +2 dicionários cada um com 'rua'...
 }
 
 print(pessoa, type(pessoa))
+
+# acessar uma chave específica e seu respectivo valor, como se fosse um índice de uma lista
+print(pessoa['idade'])
+
+print()
+
+for chave in pessoa:
+    print(chave)
