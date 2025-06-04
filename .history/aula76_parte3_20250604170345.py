@@ -7,7 +7,6 @@ Shallow copy vs. Deep copy em dados mutáveis no Python
         Dunder:
             ex.:
                 print(pessoa.__len__()) # 5
-                
 -> keys: iterável com chaves
 -> values: iterável com valores
 -> items: iterável com chaves E valores
@@ -22,14 +21,6 @@ copia os dados do dicionário, mas não o próprio dicionário ou seu endereço
 na memória. Isso significa que o novo dicionário criado (dict_2) terá uma 
 cópia dos elementos de dict_1, mas ele será independente do original, com 
 seu próprio espaço na memória.
-
-# OBS.:
-    - objetos mutáveis (como list, dict, set, objetos de classe):
-        são compartilhados entre o original e a cópia.
-    - objetos imutáveis (como int, str, float, tuple):
-        são copiados por valor (mas na prática, continuam sendo apontados, já que
-        são imutáveis e compartilham o mesmo valor).
-
 -> get: obtém uma chave
 -> pop: apaga um item com a chave especificada (parecido com o 'del')
 -> popitem: apaga o último item adc
@@ -69,8 +60,6 @@ import copy # importando o módulo copy para usar a função deepcopy
 dict_2 = copy.copy(dict_1) # cria cópia rasa do dict_1
 print("Shallow copy com uso copy.copy():", dict_2) 
 # ou seja, os dicts vão compartilhar a mesma lista na memória
-# Ou seja, dict_2 é uma nova estrutura de dicionário, mas os objetos 
-# mutáveis dentro dele (como listas) são compartilhados com dict_1
 
 print("Deep Copy:")
 dict_1 = {
