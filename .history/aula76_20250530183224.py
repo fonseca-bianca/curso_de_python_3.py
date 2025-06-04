@@ -64,10 +64,7 @@ print(pessoa, type(pessoa))
 
 # acessar uma chave específica e seu respectivo valor, como se fosse um índice 
 # de uma lista
-
-del(pessoa['sobrenome'])  # deleta a chave no dicionário pra sempre
-print(pessoa['idade'])  
-
+print(pessoa['idade'])
 
 print()
 
@@ -76,4 +73,4 @@ print()
 # output: {'nome': 'Luiz', 'sobrenome': 'Miranda'} <class 'dict'>
 
 for chave in pessoa:
-    print(chave, pessoa[chave]) 
+    print(chave, pessoa[chave])
