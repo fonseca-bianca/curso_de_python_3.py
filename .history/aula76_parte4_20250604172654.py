@@ -55,17 +55,17 @@ person_1.update(name="R2D2", age=30) # argumentos nomeados
 print(person_1)
 
 print()
-print("Update: (3ª forma de escrevê-lo usando Tupla)") # chave, valor
-tuple_registration_data = (('name', 'new value'), ('age', 30)) 
-# person_1.update((('name', 'new value'), ('age', 30)))
+print("Update: (3ª forma de escrevê-lo usando Tupla)")
+tuple_registration_data = ('name', 'novo_valor'),
 person_1.update(tuple_registration_data)
 print(person_1)
-
+# Output:
+# {'first_name': 'Luke', 'middle_name': "Vader's son", 'last_name': 'Skywalker', 'name': 'profession'}
 
 print()
-print("Update: (3ª forma de escrevê-lo usando Lista -> "
-      "iterável que se comporta como um dicionário)")
-list_registration_data = [['name', 'new_value'], ['age', 30]]
-# person_1.update([['name', 'new_value'], ['age', 30]])
+print("Update: (3ª forma de escrevê-lo usando Lista -> iterável que se comporta como um dicionário)")
+list_registration_data = ['name', 'profession'],
 person_1.update(list_registration_data)
 print(person_1)
+# Output:
+# {'first_name': 'Luke', 'middle_name': "Vader's son", 'last_name': 'Skywalker', 'name': 'profession'}

@@ -34,7 +34,7 @@ name = person_1.popitem()
 print(name)
 print(person_1)
 # NÃO passar chave como Argumento.
-# ele vai retornar a última chave
+# remove a última chave do dict
 
 print()
 print("Update:")
@@ -43,6 +43,29 @@ person_1.update({
     "last_name": "Organa", 
 })
 print(person_1)
-# atualiza o dict
+# atualiza o dict com os valores especificados
+# se NÃO especificar nada, ele não fará nada
+# pode atualizar um valor ou criar uma nova chave
+# se a chave já existir, o valor será atualizado
 # Update: mexe no próprio dict
 
+print()
+print("Update: (2ª forma de escrevê-lo)")
+person_1.update(name="R2D2", age=30) # argumentos nomeados
+print(person_1)
+
+print()
+print("Update: (3ª forma de escrevê-lo usando Tupla)") # chave, valor
+tuple_registration_data = (('name', 'new value'), ('age', 30)) 
+# person_1.update((('name', 'new value'), ('age', 30)))
+person_1.update(tuple_registration_data)
+print(person_1)
+
+
+print()
+print("Update: (3ª forma de escrevê-lo usando Lista -> "
+      "iterável que se comporta como um dicionário)")
+list_registration_data = [['name', 'new_value'], ['age', 30]]
+# person_1.update([['name', 'new_value'], ['age', 30]])
+person_1.update(list_registration_data)
+print(person_1)

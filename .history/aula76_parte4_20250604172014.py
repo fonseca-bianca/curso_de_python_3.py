@@ -34,7 +34,7 @@ name = person_1.popitem()
 print(name)
 print(person_1)
 # NÃO passar chave como Argumento.
-# ele vai retornar a última chave
+# remove a última chave do dict
 
 print()
 print("Update:")
