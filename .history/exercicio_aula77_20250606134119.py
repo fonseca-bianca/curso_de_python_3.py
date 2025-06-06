@@ -4,7 +4,7 @@ criando um sistema de perguntas e respostas utilizando:
 dict, list, tuple, for, while, function
 """
 
-
+# lista q contém 3 dict.:
 perguntas = [
     {
         "Pergunta": "Qual o resultado de 10 * 2?",
@@ -23,37 +23,44 @@ perguntas = [
     },
 ]
 
-for pergunta in perguntas:
+qtd_acertos = 0 # vai contar quantas perguntas o usuário acertou
+for pergunta in perguntas: # pergunta e as opções de resposta
     print("Pergunta:", pergunta["Pergunta"])
     
     opcoes = pergunta["Opcoes"]
     for i, opcao in enumerate(opcoes):
-        letra = chr(97 + i)  # 97 é o código ASCII para 'a' e as demais o cód irá verificar automaticamente
+        letra = chr(97 + i)  
+        # 97 é o código ASCII para 'a' e as demais o cód irá verificar 
+        # automaticamente
         print(f"{letra}.", opcao)
-        
-    escolha = input("Escolha uma opção: ")
     
     acertou = False
     escolha_str = None
     qtd_opcoes = len(opcoes)
     
-    if isinstance(escolha, str): # verifica se var 'escolha' é uma string
-        escolha_str = str(escolha)
+    escolha_valida = False
+    while not escolha_valida:
+        escolha = input("Escolha uma opção: ")
         
-    if escolha not in [chr(97 + i) for i in range(len(opcoes))]:
-        print("Escolha inválida. Tente novamente.")
-        break
+        if escolha not in [chr(97 + i) for i in range(len(opcoes))]:
+            print("Escolha inválida. Tente novamente.")
+        else:
+            escolha_valida = True
     
+    print()
     index_escolha = ord(escolha) - 97 # ord('a') - 97 --> índice 0
     if opcoes[index_escolha] == pergunta["Resposta"]:
+        qtd_acertos += 1
         print("Você acertou!")
     else:
         print("Você errou.")
     
     print()
     
-    # Função 'ord()': 
-    # retorna o código ASCII de um caractere --> ord('a') = 97
-    # Função 'chr()': 
-    # retorna o caractere correspondente ao código ASCII
+print("Você acertou", qtd_acertos, "de", len(perguntas), "perguntas.")
+
+# Função 'ord()': 
+# retorna o código ASCII de um caractere --> ord('a') = 97
+# Função 'chr()': 
+# retorna o caractere correspondente ao código ASCII
 
