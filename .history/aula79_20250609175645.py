@@ -9,7 +9,7 @@ armazenar somente o primeiro e manter ele na memória.
 typed_letter = set()
 while True:
     letter = input("Digite a letra: ")
-    typed_letter.add(letter.lower()) # converte letra digitada pra minúscula
+    typed_letter.add(letter.lower())
     
     if "m" in typed_letter:
         print("Parabéns! você encontrou a letra premiada \õ/")

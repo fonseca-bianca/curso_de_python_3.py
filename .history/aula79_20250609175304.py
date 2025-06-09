@@ -6,16 +6,16 @@ Se, por ex., pedir pro usuário inserir algum dado e ele repetir, o SET irá
 armazenar somente o primeiro e manter ele na memória.
 """
 
-typed_letter = set()
+letras = set()
 while True:
-    letter = input("Digite a letra: ")
-    typed_letter.add(letter.lower()) # converte letra digitada pra minúscula
+    letra = input("Digite a letra: ")
+    letras.add(letra.lower())
     
-    if "m" in typed_letter:
+    if "m" in letras:
         print("Parabéns! você encontrou a letra premiada \õ/")
         break
     else:
         print("Você ainda não encontrou a letra premiada :( "
               "Continue digitando até encontrá-la.")
     
-    print(typed_letter)
+    print(letras)

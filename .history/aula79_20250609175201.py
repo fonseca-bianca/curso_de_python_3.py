@@ -2,8 +2,8 @@
 Exemplo de uso do tipo SET:
 O SET, em Python, facilita pra evitar a sobrecarga de espaço de armazenamento 
 de dados no programa, já que NÃO salva itens repetidos.
-Se, por ex., pedir pro usuário inserir algum dado e ele repetir, o SET irá armazenar
-somente o primeiro e manter ele na memória.
+Se, por ex., pedir pro usuário inserir algum dado e ele repetir, o SET irá 
+armazenar somente o primeiro e manter ele na memória.
 """
 
 letras = set()
@@ -14,5 +14,7 @@ while True:
     if "m" in letras:
         print("Parabéns! você encontrou a letra premiada")
         break
+    else:
+        print("Você ainda não encontrou a letra premiada :( )")
     
     print(letras)
