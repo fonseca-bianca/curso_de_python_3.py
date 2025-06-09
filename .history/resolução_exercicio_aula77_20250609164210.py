@@ -37,8 +37,7 @@ for pergunta in perguntas:
 
     if escolha.isdigit(): 
         # .isdigit() vai verificar se carac. string são dígitos numérios 0-9
-        # e vai retornar um Bool
-        # verificar se é nº antes de converter pra int ==> evita erro conversão
+        #  e vai retornar um Bool
         escolha_int = int(escolha)
 
     if escolha_int is not None:
