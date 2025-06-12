@@ -8,13 +8,12 @@ Requisitos:
         Exemplo:
         [1, 2, 3, ->3<-, 2, 1] -> 1, 2 e 3 são duplicados (retorne 3)
         [1, 2, 3, 4, 5, 6] -> Retorne -1 (não tem duplicados)
-            * como se fosse um CASO BASE, logo, evitar usar 'else'
         [1, 4, 9, 8, ->9<-, 4, 8] (retorne 9)
     Se não encontrar duplicados na lista, retorne -1
     
     
 """
-lista_de_listas_de_inteiros = [
+lista_de_lista_de_inteiros = [
     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     [9, 1, 8, 9, 9, 7, 2, 1, 6, 8], # 1 é o segundo duplicado
     [1, 3, 2, 2, 8, 6, 5, 9, 6, 7], # 6 é o segundo duplicado
@@ -33,8 +32,7 @@ lista_de_listas_de_inteiros = [
 
 def encontra_primeiro_duplicado(lista_inteiros):
     numeros_checados = set()
-    primeiro_duplicado = -1 # como se fosse o 'else', é uma flag que indica
-    # que não há duplicados
+    primeiro_duplicado = -1
     
     # função: vai retornar o primeiro número que aparece repetido 
     # (ou seja, a primeira duplicação 
@@ -59,8 +57,6 @@ def encontra_primeiro_duplicado(lista_inteiros):
         numeros_checados.add(numero) # adc número atual ao conjunto de nºs 
         # checados, pra q ele possa ser verificado em iterações futuras
         
-        
-        
     return primeiro_duplicado # retorna o primeiro número duplicado 
 # encontrado ou -1 se não houver duplicados
 
@@ -68,9 +64,8 @@ def encontra_primeiro_duplicado(lista_inteiros):
 # itera sobre uma lista de listas (lista_de_listas_de_inteiros) e chama a
 # função encontra_primeiro_duplicado para cada lista de inteiros (cada linha, 
 # no caso)
-for lista in lista_de_listas_de_inteiros:
+for lista in lista_de_lista_de_inteiros:
     print(
-        lista, # mostra cada lista 
-        f"O primeiro duplicado é (se não houver, será -1): "
-        f"{encontra_primeiro_duplicado(lista)}"
+        lista,
+        f"O primeiro duplicado é:  {encontra_primeiro_duplicado(lista)}"
     )

@@ -8,7 +8,6 @@ Requisitos:
         Exemplo:
         [1, 2, 3, ->3<-, 2, 1] -> 1, 2 e 3 são duplicados (retorne 3)
         [1, 2, 3, 4, 5, 6] -> Retorne -1 (não tem duplicados)
-            * como se fosse um CASO BASE, logo, evitar usar 'else'
         [1, 4, 9, 8, ->9<-, 4, 8] (retorne 9)
     Se não encontrar duplicados na lista, retorne -1
     
@@ -33,8 +32,7 @@ lista_de_listas_de_inteiros = [
 
 def encontra_primeiro_duplicado(lista_inteiros):
     numeros_checados = set()
-    primeiro_duplicado = -1 # como se fosse o 'else', é uma flag que indica
-    # que não há duplicados
+    primeiro_duplicado = -1
     
     # função: vai retornar o primeiro número que aparece repetido 
     # (ou seja, a primeira duplicação 

@@ -34,22 +34,35 @@ def encontra_primeiro_duplicado(lista_inteiros):
     numeros_checados = set()
     primeiro_duplicado = -1
     
-    # função: vai retornar o primeiro número que aparece repetido (ou seja, a primeira duplicação 
+    # função: vai retornar o primeiro número que aparece repetido 
+    # (ou seja, a primeira duplicação 
     # encontrada ao percorrer a lista). 
     #         -1 se não houver duplicados.
     # set(): é um conjunto vazio q vai armazenar os números já checados.
-    # primeiro_duplicado: variável que vai armazenar o primeiro número duplicado encontrado. 
+    # primeiro_duplicado: variável que vai armazenar o primeiro número 
+    # duplicado encontrado. 
     #                    -1 é o valor padrão, caso não haja duplicados.
     
-    for numero in lista_inteiros: # vai percorrer cada número da lista de inteiros
-        if numero in numeros_checados: # verificar a duplicação. Se o número atual já estiver no conjunto set() de numeros_checados, então ele será considerado como duplicado
-            primeiro_duplicado = numero
+    for numero in lista_inteiros: # vai percorrer cada número da lista de int
+        if numero in numeros_checados: # verificar a duplicação. 
+            # Se o número atual já estiver no conjunto set() de 
+            # numeros_checados, então ele será considerado como duplicado
+            primeiro_duplicado = numero # número duplicado será armazenado 
+            # na variável primeiro_duplicado e vai encerrar o loop com base 
+            # na leitura do 'break' (neste caso, o loop é interrompido, pq 
+            # NÃO queremos encontrar mais NENHUM duplicado)
             break
         
-        numeros_checados.add(numero)
+        numeros_checados.add(numero) # adc número atual ao conjunto de nºs 
+        # checados, pra q ele possa ser verificado em iterações futuras
         
-    return primeiro_duplicado
+    return primeiro_duplicado # retorna o primeiro número duplicado 
+# encontrado ou -1 se não houver duplicados
 
+# saída do loop principal:
+# itera sobre uma lista de listas (lista_de_listas_de_inteiros) e chama a
+# função encontra_primeiro_duplicado para cada lista de inteiros (cada linha, 
+# no caso)
 for lista in lista_de_listas_de_inteiros:
     print(
         lista,
