@@ -20,9 +20,6 @@ Estrutura Lambda:
 
 def executa(funcao, *args):
     return funcao(*args)
-# Recebe uma função (funcao) e qualquer quantidade de argumentos (*args).
-# Usa funcao(*args) pra executar essa função com os argumentos recebidos.
-# 💡 *args significa: "junte todos os argumentos extras em uma tupla".
 
 
 # def soma(x, y):
@@ -36,37 +33,22 @@ def executa(funcao, *args):
 
 
 # duplica = cria_multiplicador(2)
-
-# 1º uso: função lambda aninhada (função que retorna outra função)
 duplica = executa(
     lambda m: lambda n: n * m,
     2
 )
-print(duplica(2)) # duplica(2) => 2 * 2 = 4
-# lambda m: lambda n: n * m --> cria uma função que retorna outra função.
-# Você passa 2 como argumento (m = 2), então vira: lambda n: n * 2
-# Isso é igual a uma função "multiplicador" que duplica o valor.
+print(duplica(2))
 
-
-# 2º uso: soma simples
 print(
     executa(
         lambda x, y: x + y,
         2, 3
     ),
 )
-# Aqui a lambda x, y: x + y --> é uma função que soma dois números.
-# Os argumentos 2, 3 são passados para ela.
-# Resultado: 2 + 3 = 5
 
-
-# 3º uso: soma de vários números
 print(
     executa(
         lambda *args: sum(args),
         1, 2, 3, 4, 5, 6, 7
     )
 )
-# Aq a função lambda *args: sum(args) --> aceita qlqr quantidade de números.
-# sum(args) soma todos eles.
-# Resultado: 1+2+3+4+5+6+7 = 28
