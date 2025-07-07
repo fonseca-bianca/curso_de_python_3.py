@@ -42,9 +42,5 @@ dc = {
 print(dc)
 
 # Set Comprehension:
-# NÃO mencionamos as chaves, apenas os valores
+print(dict(range(10)))  # Cria um dicionário com chaves de 0 a 9 e valores iguais às chaves
 
-s1 = {
-    i for i in range(10)
-}
-print(s1) 

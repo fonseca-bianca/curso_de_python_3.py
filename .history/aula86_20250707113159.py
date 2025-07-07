@@ -47,4 +47,5 @@ print(dc)
 s1 = {
     i for i in range(10)
 }
-print(s1) 
+print(s1(range(10)))  # Cria um dicionário com chaves de 0 a 9 e valores iguais às chaves
+

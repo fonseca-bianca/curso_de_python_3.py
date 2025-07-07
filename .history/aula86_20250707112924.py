@@ -32,6 +32,8 @@ lista = [
     ('c', 'valor c')
 ]
 
+
+
 # Essa sintaxe percorre cada tupla na lista, desempacotando os elementos 
 # como chave e valor. Constrói um dicionário
 dc = {
@@ -41,10 +43,3 @@ dc = {
 
 print(dc)
 
-# Set Comprehension:
-# NÃO mencionamos as chaves, apenas os valores
-
-s1 = {
-    i for i in range(10)
-}
-print(s1) 
