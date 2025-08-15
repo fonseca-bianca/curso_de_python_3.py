@@ -1,0 +1,5 @@
+"""
+Recarregando módulos:
+    importlib
+    singleton
+"""
