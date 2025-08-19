@@ -17,10 +17,7 @@ produtos = [
     {'nome': 'Produto 4', 'preco': 69.90},
 ]
 
-print("Produtos SEM aumento de 10%:", *produtos, sep='\n')
-# necessário desempacotar a lista *produtos pra conseguir listar cada item 
-# separadamente e usar o sep='\n' pra cada um ser impresso em uma linha por 
-# meio da quebra de linha
+print(f"Produtos SEM aumento de 10%: {produtos}")
 
 print("----------------------------------------")
 
