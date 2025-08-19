@@ -43,10 +43,6 @@ produtos_ordenados_por_nome.sort(
     key=lambda nome_produto: nome_produto['nome'], reverse=True
     )
 print(produtos_ordenados_por_nome)
-# 'nome' (entre aspas) é a chave do dicionário
-# nome_produto['nome'] é a operação que acessa essa chave para obter o 
-# seu valor (que no exemplo é a str 'Produto 1', 'Produto 2', etc.)
-
 
 print("3) Produtos ordenados por preço (Crescente):")
 
