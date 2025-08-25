@@ -7,7 +7,6 @@ com complemento:
 """
 
 def criar_funcao(func): # função decoradora q recebe como arg outra função
-# (func) é a própria função 'inverte_string'
     def interna(*args, **kwargs):
         print('Vou te decorar')
         for arg in args:
