@@ -15,8 +15,9 @@ def maiuscula(func): # Decorador para deixar a string em maiúsculas
 
 def repetir(func): # Decorador para repetir a string 3 vezes
     def wrapper(*args, **kwargs):
-        resultado = func(*args, **kwargs)
-        return resultado * 3
+        for _ in range(3):
+            resultado = func(*args, **kwargs)
+        return resultado
     return wrapper
 
 @repetir 
@@ -26,24 +27,3 @@ def saudacao(nome): # ambos @decoradores aplicados nesta função
 
 print(saudacao("Anna"))
     
-
-print("---------------------------------------------------------------------")
-# Decoradores com Argumentos:
-def repetir_vezes(n):
-    def decorador(func):
-        def wrapper(*args, **kwargs):
-            for _ in range(n):
-                resultado = func(*args, **kwargs)
-            return resultado
-        return wrapper
-    return decorador
-
-@repetir_vezes(3)
-def dizer_oi(nome):
-    print(f'Olá, {nome}!')
-
-dizer_oi('Juliano')
-# output:
-# Olá, Juliano!
-# Olá, Juliano!
-# Olá, Juliano!

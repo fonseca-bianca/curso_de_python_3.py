@@ -28,22 +28,23 @@ print(saudacao("Anna"))
     
 
 print("---------------------------------------------------------------------")
-# Decoradores com Argumentos:
-def repetir_vezes(n):
-    def decorador(func):
-        def wrapper(*args, **kwargs):
-            for _ in range(n):
-                resultado = func(*args, **kwargs)
-            return resultado
-        return wrapper
-    return decorador
+# Decoradores Aninhados:
+def maiusculas(func):
+    def wrapper(*args, **kwargs):
+        retorno = func(*args, **kwargs)
+        return retorno.upper()
+    return wrapper
 
-@repetir_vezes(3)
-def dizer_oi(nome):
-    print(f'Olá, {nome}!')
+def repetir(func):
+    def wrapper(*args, **kwargs):
+        resultado = func(*args, **kwargs)
+        return resultado * 2
+    return wrapper
 
-dizer_oi('Juliano')
-# output:
-# Olá, Juliano!
-# Olá, Juliano!
-# Olá, Juliano!
+@repetir
+@maiusculas
+def saudacao(nome):
+    return f'Olá, {nome}!'
+
+print(saudacao('Juliano'))
+# output: OLÁ, JULIANO!OLÁ, JULIANO!
