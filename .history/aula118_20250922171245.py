@@ -1,0 +1,16 @@
+"""
+Problema dos parâmetros mutáveis em funções Python:
+- shallow copy, deep copy, copy, coisas mutáveis
+
+    * NÃO usar parâmetros mutáveis no lugar dos parâmetros de valor padrão de 
+    uma função
+        ex.:
+            def func(a, b=[]): # NÃO FAÇA ISSO
+            - SOLUÇÃO:
+                def func(a, b=None): # 'b' passa a ser Imutável
+                    if b is None:
+                        b = []
+                        
+                        ** já q o corpo da função é executado toda vez q a 
+                        função é chamada
+"""
