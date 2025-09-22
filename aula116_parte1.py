@@ -79,3 +79,5 @@ with open(caminho_arquivo, 'w+') as arquivo:
 # caminho_arq += "aula116.txt"
 # print(caminho_arq)
 # output: C:\Users\fonse\Desktop\dev_bianca\udemy\python_completo\aula116.txt
+
+
